@@ -13,6 +13,7 @@ from bp.base import Progress, Ingredient, Listable
 import dateutil.parser
 
 
+
 class Analyze(db.Model):
     keyword = db.TextProperty(required=True)
     title = db.TextProperty()
