@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Available Sources - Buglates</title>
+</head>
+<body>
+  <ul>
+  {% for s in sources %}
+    <li><a href="{{ s.view_url }}">{{ s.url }}</a>
+  {% endfor %}
+  </ul>
+</body>
+<html>

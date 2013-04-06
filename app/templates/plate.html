@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="/bootstrap/js/bootstrap.js"></script>
+  <script language="Javascript" type="text/javascript" src="/script/onclicklistener.js"></script>
+
+  <meta charset="UTF-8">
+
+  <title>{{ url }} - Bugplates</title>
+</head>
+<body>
+  <!--navi bar-->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Bugplates</a>
+
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li>
+              <a href="/p">Home</a>
+            </li>
+            <li>
+              <a href="/p/my">My Page</a>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <ul class="nav">
+              <li>
+                <a href="#">{{ user }}</a>
+              </li>
+              <li>
+                <a href="{{logout_url}}">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.nav-collapse --> </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!--Search-->
+    <h1>{{name}}</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+    <ul class=flashes>
+      {% for message in messages %}
+      <div class="alert"> <b>Warning!</b>
+        {{ message }}
+      </div>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="row-fluid">
+      <div class="span2">
+        <div class="btn-group" style="text-align:left; margin-bottom: 10px">
+
+          <a class="btn" href="/p"> <i class="icon-home"></i>
+          </a>
+          <a class="btn plate-edit-button"><i class="icon-edit"></i>
+          </a>
+          <a class="btn plate-delete-button-link">
+            <i class="icon-trash"></i>
+          </a>
+          <form action="/p/{{ name }}/edit" method="POST" style="display:inline" id="edit-button">
+            <input id="rename-input" type="text" name="rename" value="" style="visibility: hidden;">
+          </form>
+          <form action="{{ name }}/delete" method="POST" style="display:inline" id="trash-button"></form>
+        </div>
+      </div>
+
+      <div class="offset6 span4">
+        <form class="form-search" style="text-align:right;">
+          <div class="input-append">
+            <form action="#" method="GET">
+              <input type="text" class="search-query" size="16" name="search_word">
+              <input class="btn" type ="submit" value="search"></form>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contents -->
+    {% for e in entrees %}
+    {% if e.status == "RESOLVED" %}
+    <div class="alert alert-success">
+      {% elif e.review == "review+" %}
+      <div class="alert alert-block">
+        {% else %}
+        <div class="alert alert-error">
+          {% endif %}
+          <div class="row-fluid">
+            <div class="span10">
+              <h4>{{e.title}}</h4>
+            </div>
+            <div class="span2" style="text-align:right">
+              <div class="btn-group">
+                <a class="btn refresh-button-link">
+                  <i class="icon-circle-arrow-up"></i>
+                  <form action="{{ e.source.view_url }}/refresh" method="POST" style="display:inline" id="refresh-source"></form>
+                </a>
+                <a class = "btn delete-button-link">
+                  <i class="icon-trash"></i>
+                  <form action="{{e.view_url}}/delete" method="POST" style="display:inline" id="delete-entree"></form>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <h5>
+                <a href="{{ e.source_url}}">{{ e.source_url }}</a>
+                (
+                <a href="{{ e.source.view_url }}">s</a>
+                )
+              </h5>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span3">{{e.review}}</div>
+            <div class="span3">{{e.cqflag}}</div>
+            <div class="span3">{{e.status}}</div>
+            <div class="span3">{{e.modified_at}}</div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- Contents End-->
+
+        <!--Create Button-->
+        <div class="row-fluid">
+          <div class="span12" >
+            <div class="input-append" style="text-align: right">
+              <form action="{{ url }}/more" method="POST">
+                <input class="span2" id="CreateButton" size="16" type="text" name="url" placeholder="URL">
+                <button class ="btn" type="submit">Create</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--Create Button End--> </div>
+    </div>
+
+</body>
+    <html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="/bootstrap/js/bootstrap.js"></script>
+  <script language="Javascript" type="text/javascript" src="/script/onclicklistener.js"></script>
+
+
+  <meta charset="UTF-8">
+  
+
+  <title>{{ source_url_decoded }} - Bugplates</title>
+</head>
+<body>
+  <!--navi bar-->
+  <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8" style="text-align:center">
+      <h2>Add Bug</h2>
+      <p class="text-info"><a href="{{source_url_decoded}}">{{ source_url_decoded }}</a></p>
+      <form action="/add/{{ source_url }}/refresh" method="POST">
+      <select class="add-bug-by-bookmarklet-button" style="width:300px" name="name">
+        {% for p in plates %}
+        <option>{{p.name}}</option>
+        {% endfor %}
+      </select>
+       <button class="btn" type="submit" id="add-bug-by-bookmarklet">Submit</button>
+     </form>
+    </div>
+    <div class="span2"></div>
+  </div>
+
+
+
+
+</body>
+<html>

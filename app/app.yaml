@@ -1,0 +1,33 @@
+
+
+application: google.com:bugplates
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+libraries:
+- name: jinja2
+  version: "2.6"
+- name: markupsafe
+  version: "0.15"
+
+inbound_services:
+- mail
+
+handlers:
+- url : /bootstrap
+  static_dir: bootstrap
+
+- url : /css
+  static_dir: css
+
+- url : /script
+  static_dir: script
+
+- url: /_ah/mail/.+
+  script: mail_send.app
+  # login: admin
+
+- url: .*
+  script: web.app

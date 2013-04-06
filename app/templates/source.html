@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ source_url }} - Buglates</title>
+</head>
+<body>
+<h1>Source: <a href="{{ source.url }}">{{ source.url }}</a></h1>
+Referred from
+  {% for p in plates %}
+    [<a href="{{ p.view_url }}">{{ p.name }}</a>]
+  {% endfor %}
+<form action="{{ source.view_url }}/refresh" method="POST"><input type="submit" value="Refresh"></form>
+
+</body>
+<html>
