@@ -12,18 +12,15 @@ class AnalyzeTest(unittest.TestCase, helpers.DataStoreTestHelper):
 
     def setUp(self):
         self.setUpBed()
-        self.target_url = open(os.path.join(DATA_DIR,"results.xml"),'r')
+        self.target_url = "http://feeds.feedburner.com/GoogleJapanBlog"
+        self.target = bp.Analyze(url=self.target_url)
 
     def tearDown(self):
         self.tearDownBed()
 
-    def test_create(self):
-        soup = bp.Analyze.create("AnalyzeTest")
-        logging.info(soup);
-
-
     def test_title(self):
-        soup = bp.Analyze.create("AnalyzeTest")
+        logging.error("____"+self.target+"____")
+
 
 #        self.assertEquals(self.target.source_url,self.target_url)
 

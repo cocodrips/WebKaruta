@@ -9,23 +9,32 @@ import re
 import dateutil.parser
 
 from google.appengine.ext import db
-from bp.base import Progress, Ingredient, Listable
+import bp
 import dateutil.parser
 
 
 
-class Analyze(db.Model):
-    keyword = db.TextProperty(required=True)
-    title = db.TextProperty()
-    title_word = db.TextProperty()
-    abstract = db.TextProperty()
-    url = open('/Users/Chiichan/Documents/python/WebKaruta/tests/data/result.xml', 'r')
-    tree = ElementTree(file=StringIO.StringIO(url))
+class Analyze():
+    url = ""
+    def __init__(self, url):
+        logging.info("___init__")
+        result = self.extract(keyword)
+        return result
+
+    def extract(self, keyword):
+        result = bp.Ingredient()
+        url = urllib.urlopen('http://feeds.feedburner.com/GoogleJapanBlog')
+        tree = ElementTree(file=url)
+        title = self._extract_title(tree)
+        logging.info("__"+ title +"__")
+        return title
+
+    def _extract_title(self, tree):
+        return "chii"
 
 
     @classmethod
     def create(cls, keyword):
-	    return "Yahoo!"
 	    pass
         # found = cls.all().ancestor(plate).filter('source = ', source).get()
         # if found:
@@ -34,15 +43,8 @@ class Analyze(db.Model):
 #        fresh = cls(paren
 #            found = cls.all().ancestor(plate).filter('source = ', source).get()
 #            return found
-    def extract(cls, keyword):
 
-        return "Yahoo!"
-        pass
 
-    def _extract_title(self, soup):
-
-        return "Yahoo!"
-        pass
     @classmethod
     def delete_by_keyword(cls, key):
 		pass
