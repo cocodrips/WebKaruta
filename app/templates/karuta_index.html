@@ -41,10 +41,8 @@
               <div class="branch">
                 {% for d in data.keywords %}
                 {%if d.cluster == i %}
-                  <div class="node_box">
-                    <!--<div class="node">-->
+                  <div class="node_box" data-priority="{{d.priority}}">
                     {{d.keyword}}
-                    <!--</div>-->
                   </div>
                 {% endif %}
                 {% endfor %}

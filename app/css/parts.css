@@ -28,6 +28,7 @@
 .node_box{
     position: relative;
     padding: 1px;
+    font-weight: bold;
     display: inline-block;
 }
 
