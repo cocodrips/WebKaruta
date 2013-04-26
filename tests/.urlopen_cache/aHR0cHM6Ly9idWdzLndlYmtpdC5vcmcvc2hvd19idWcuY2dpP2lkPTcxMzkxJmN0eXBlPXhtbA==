@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE bugzilla SYSTEM "https://bugs.webkit.org/bugzilla.dtd">
+
+<bugzilla version="3.2.3"
+          urlbase="https://bugs.webkit.org/"
+          maintainer="admin@webkit.org"
+>
+
+    <bug>
+          <bug_id>71391</bug_id>
+          
+          <creation_ts>2011-11-02 13:13 PST</creation_ts>
+          <short_desc>Make parameters for webaudio biquad filters consistent</short_desc>
+          <delta_ts>2012-01-25 13:32:55 PST</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>WebKit</product>
+          <component>Web Audio</component>
+          <version>528+ (Nightly build)</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>Normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          <dependson>71413</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Raymond Toy">rtoy@chromium.org</reporter>
+          <assigned_to name="Raymond Toy">rtoy@chromium.org</assigned_to>
+          <cc>crogers@google.com</cc>
+    
+    <cc>rtoy@chromium.org</cc>
+
+      
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Raymond Toy">rtoy@chromium.org</who>
+            <bug_when>2011-11-02 13:13:00 PST</bug_when>
+            <thetext>The Q parameter for the biquad filters are treated inconsistently.  For all filters except lowpass and highpass filters, Q is the Q parameter, but for the LP and HP filters, Q is the resonance.  
+
+The LP and HP filters should treat the Q parameter as the Q parameter instead of the resonance.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Raymond Toy">rtoy@chromium.org</who>
+            <bug_when>2011-11-18 11:20:20 PST</bug_when>
+            <thetext>Created an attachment (id=115839)
+Patch</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Raymond Toy">rtoy@chromium.org</who>
+            <bug_when>2011-11-18 11:22:26 PST</bug_when>
+            <thetext>Make the Q parameter consistent with the Audio EQ Cookbook.
+
+This patch needs to be coordinated with the demos that use lowpass or highpass filters because the meaning of Q has changed.  Q is no longer the resonance in dB, but the actual Q factor.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Raymond Toy">rtoy@chromium.org</who>
+            <bug_when>2012-01-25 13:32:55 PST</bug_when>
+            <thetext>Make this depend on bug 71413, which will add biquad tests so we can inherit the tests from there.</thetext>
+          </long_desc>
+      
+          <attachment
+              isobsolete="0"
+              ispatch="1"
+              isprivate="0"
+          >
+            <attachid>115839</attachid>
+            <date>2011-11-18 11:20 PST</date>
+            <desc>Patch</desc>
+            <filename>bug-71391-20111118112019.patch</filename>
+            <type>text/plain</type>
+            <size>4879</size>
+            <attacher>rtoy@chromium.org</attacher>
+            
+              <data encoding="base64">U3VidmVyc2lvbiBSZXZpc2lvbjogMTAwMjYzCmRpZmYgLS1naXQgYS9Tb3VyY2UvV2ViQ29yZS9D
+aGFuZ2VMb2cgYi9Tb3VyY2UvV2ViQ29yZS9DaGFuZ2VMb2cKaW5kZXggMWM1NzEwOTNiNjQwZDNm
+Y2Q1Zjg1MGQ3ZWRiMjUzNDk1NmVkOTRmNC4uY2E2ZDU2NTUzY2E0N2MzZWM5ZTVmMmEwNjg5OWZi
+ZGI4NjZlZWRmYiAxMDA2NDQKLS0tIGEvU291cmNlL1dlYkNvcmUvQ2hhbmdlTG9nCisrKyBiL1Nv
+dXJjZS9XZWJDb3JlL0NoYW5nZUxvZwpAQCAtMSwzICsxLDE2IEBACisyMDExLTExLTE4ICBSYXlt
+b25kIFRveSAgPHJ0b3lAZ29vZ2xlLmNvbT4KKworICAgICAgICBNYWtlIHBhcmFtZXRlcnMgZm9y
+IHdlYmF1ZGlvIGJpcXVhZCBmaWx0ZXJzIGNvbnNpc3RlbnQKKyAgICAgICAgaHR0cHM6Ly9idWdz
+LndlYmtpdC5vcmcvc2hvd19idWcuY2dpP2lkPTcxMzkxCisKKyAgICAgICAgUmV2aWV3ZWQgYnkg
+Tk9CT0RZIChPT1BTISkuCisKKyAgICAgICAgKiBwbGF0Zm9ybS9hdWRpby9CaXF1YWQuY3BwOgor
+ICAgICAgICAoV2ViQ29yZTo6QmlxdWFkOjpzZXRMb3dwYXNzUGFyYW1zKToKKyAgICAgICAgKFdl
+YkNvcmU6OkJpcXVhZDo6c2V0SGlnaHBhc3NQYXJhbXMpOgorICAgICAgICBJbXBsZW1lbnQgZmls
+dGVycyB1c2luZyBlcXVhdGlvbnMgZ2l2ZW4gaW4gdGhlIEF1ZGlvIEVRIENvb2tib29rLgorICAg
+ICAgICBUaGlzIGNoYW5nZXMgdGhlIFEgcGFyYW1ldGVyIHRvIGJlIHRoZSBRIHZhbHVlLCBub3Qg
+cmVzb25hbmNlLgorCiAyMDExLTExLTE1ICBTaGVyaWZmIEJvdCAgPHdlYmtpdC5yZXZpZXcuYm90
+QGdtYWlsLmNvbT4KIAogICAgICAgICBVbnJldmlld2VkLCByb2xsaW5nIG91dCByMTAwMjEzLgpk
+aWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUvcGxhdGZvcm0vYXVkaW8vQmlxdWFkLmNwcCBiL1Nv
+dXJjZS9XZWJDb3JlL3BsYXRmb3JtL2F1ZGlvL0JpcXVhZC5jcHAKaW5kZXggOGRjMWY0ZmI2OWU3
+MTEyYmJiMTYwZDk3ZDEzM2MwMGVjODkwYTYyOS4uNTYxMDNlNDdkNWMzOGFkYTdjMTZiZDI1YzRm
+NDZkMzA3MzhhM2U4OSAxMDA2NDQKLS0tIGEvU291cmNlL1dlYkNvcmUvcGxhdGZvcm0vYXVkaW8v
+QmlxdWFkLmNwcAorKysgYi9Tb3VyY2UvV2ViQ29yZS9wbGF0Zm9ybS9hdWRpby9CaXF1YWQuY3Bw
+CkBAIC0xODUsNTIgKzE4NSw1MSBAQCB2b2lkIEJpcXVhZDo6cmVzZXQoKQogI2VuZGlmCiB9CiAK
+LXZvaWQgQmlxdWFkOjpzZXRMb3dwYXNzUGFyYW1zKGRvdWJsZSBjdXRvZmYsIGRvdWJsZSByZXNv
+bmFuY2UpCi17Ci0gICAgcmVzb25hbmNlID0gc3RkOjptYXgoMC4wLCByZXNvbmFuY2UpOyAvLyBj
+YW4ndCBnbyBuZWdhdGl2ZQorLy8gVGhlIGZpbHRlciBkZWZpbmVkIGhlcmUgZm9sbG93IHRoZSBk
+ZXNpZ24gZm9ybXVsYXMgZnJvbQorLy8gaHR0cDovL3d3dy5tdXNpY2RzcC5vcmcvZmlsZXMvQXVk
+aW8tRVEtQ29va2Jvb2sudHh0LgogCi0gICAgZG91YmxlIGcgPSBwb3coMTAuMCwgMC4wNSAqIHJl
+c29uYW5jZSk7Ci0gICAgZG91YmxlIGQgPSBzcXJ0KCg0IC0gc3FydCgxNiAtIDE2IC8gKGcgKiBn
+KSkpIC8gMik7Cit2b2lkIEJpcXVhZDo6c2V0TG93cGFzc1BhcmFtcyhkb3VibGUgY3V0b2ZmLCBk
+b3VibGUgUSkKK3sKKyAgICAvLyBUT0RPKHJ0b3kpOiBIYW5kbGUgdGhlIGNhc2Ugd2hlbiBRID0g
+MAorICAgIFEgPSBzdGQ6Om1heCgwLjAsIFEpOyAvLyBjYW4ndCBnbyBuZWdhdGl2ZQogCi0gICAg
+Ly8gQ29tcHV0ZSBiaXF1YWQgY29lZmZpY2llbnRzIGZvciBsb3Bhc3MgZmlsdGVyCiAgICAgZG91
+YmxlIHRoZXRhID0gcGlEb3VibGUgKiBjdXRvZmY7Ci0gICAgZG91YmxlIHNuID0gMC41ICogZCAq
+IHNpbih0aGV0YSk7Ci0gICAgZG91YmxlIGJldGEgPSAwLjUgKiAoMSAtIHNuKSAvICgxICsgc24p
+OwotICAgIGRvdWJsZSBnYW1tYSA9ICgwLjUgKyBiZXRhKSAqIGNvcyh0aGV0YSk7Ci0gICAgZG91
+YmxlIGFscGhhID0gMC4yNSAqICgwLjUgKyBiZXRhIC0gZ2FtbWEpOwotCi0gICAgbV9iMCA9IDIg
+KiBhbHBoYTsKLSAgICBtX2IxID0gMiAqIDIgKiBhbHBoYTsKLSAgICBtX2IyID0gMiAqIGFscGhh
+OwotICAgIG1fYTEgPSAyICogLWdhbW1hOwotICAgIG1fYTIgPSAyICogYmV0YTsKKyAgICBkb3Vi
+bGUgYyA9IGNvcyh0aGV0YSk7CisgICAgZG91YmxlIGFscGhhID0gc2luKHRoZXRhKSAvICgyICog
+USk7CisKKyAgICBkb3VibGUgYjAgPSAoMSAtIGMpIC8gMjsKKyAgICBkb3VibGUgYjEgPSAxIC0g
+YzsKKyAgICBkb3VibGUgYjIgPSAoMSAtIGMpIC8gMjsKKyAgICBkb3VibGUgYTAgPSAxICsgYWxw
+aGE7CisgICAgZG91YmxlIGExID0gLTIgKiBjOworICAgIGRvdWJsZSBhMiA9IDEgLSBhbHBoYTsK
+KworICAgIHNldE5vcm1hbGl6ZWRDb2VmZmljaWVudHMoYjAsIGIxLCBiMiwgYTAsIGExLCBhMik7
+CiB9CiAKLXZvaWQgQmlxdWFkOjpzZXRIaWdocGFzc1BhcmFtcyhkb3VibGUgY3V0b2ZmLCBkb3Vi
+bGUgcmVzb25hbmNlKQordm9pZCBCaXF1YWQ6OnNldEhpZ2hwYXNzUGFyYW1zKGRvdWJsZSBjdXRv
+ZmYsIGRvdWJsZSBRKQogewotICAgIHJlc29uYW5jZSA9IHN0ZDo6bWF4KDAuMCwgcmVzb25hbmNl
+KTsgLy8gY2FuJ3QgZ28gbmVnYXRpdmUKKyAgICAvLyBUT0RPKHJ0b3kpOiBIYW5kbGUgdGhlIGNh
+c2Ugd2hlbiBRID0gMAorICAgIFEgPSBzdGQ6Om1heCgwLjAsIFEpOyAvLyBjYW4ndCBnbyBuZWdh
+dGl2ZQogCi0gICAgZG91YmxlIGcgPSBwb3coMTAuMCwgMC4wNSAqIHJlc29uYW5jZSk7Ci0gICAg
+ZG91YmxlIGQgPSBzcXJ0KCg0IC0gc3FydCgxNiAtIDE2IC8gKGcgKiBnKSkpIC8gMik7Ci0KLSAg
+ICAvLyBDb21wdXRlIGJpcXVhZCBjb2VmZmljaWVudHMgZm9yIGhpZ2hwYXNzIGZpbHRlcgogICAg
+IGRvdWJsZSB0aGV0YSA9IHBpRG91YmxlICogY3V0b2ZmOwotICAgIGRvdWJsZSBzbiA9IDAuNSAq
+IGQgKiBzaW4odGhldGEpOwotICAgIGRvdWJsZSBiZXRhID0gMC41ICogKDEgLSBzbikgLyAoMSAr
+IHNuKTsKLSAgICBkb3VibGUgZ2FtbWEgPSAoMC41ICsgYmV0YSkgKiBjb3ModGhldGEpOwotICAg
+IGRvdWJsZSBhbHBoYSA9IDAuMjUgKiAoMC41ICsgYmV0YSArIGdhbW1hKTsKLQotICAgIG1fYjAg
+PSAyICogYWxwaGE7Ci0gICAgbV9iMSA9IDIgKiAtMiAqIGFscGhhOwotICAgIG1fYjIgPSAyICog
+YWxwaGE7Ci0gICAgbV9hMSA9IDIgKiAtZ2FtbWE7Ci0gICAgbV9hMiA9IDIgKiBiZXRhOworICAg
+IGRvdWJsZSBjID0gY29zKHRoZXRhKTsKKyAgICBkb3VibGUgYWxwaGEgPSBzaW4odGhldGEpIC8g
+KDIgKiBRKTsKKworICAgIGRvdWJsZSBiMCA9ICgxICsgYykgLyAyOworICAgIGRvdWJsZSBiMSA9
+IC0oMSArIGMpOworICAgIGRvdWJsZSBiMiA9ICgxICsgYykgLyAyOworICAgIGRvdWJsZSBhMCA9
+IDEgKyBhbHBoYTsKKyAgICBkb3VibGUgYTEgPSAtMiAqIGM7CisgICAgZG91YmxlIGEyID0gMSAt
+IGFscGhhOworCisgICAgc2V0Tm9ybWFsaXplZENvZWZmaWNpZW50cyhiMCwgYjEsIGIyLCBhMCwg
+YTEsIGEyKTsKIH0KIAogdm9pZCBCaXF1YWQ6OnNldE5vcm1hbGl6ZWRDb2VmZmljaWVudHMoZG91
+YmxlIGIwLCBkb3VibGUgYjEsIGRvdWJsZSBiMiwgZG91YmxlIGEwLCBkb3VibGUgYTEsIGRvdWJs
+ZSBhMikKIHsKICAgICBkb3VibGUgYTBJbnZlcnNlID0gMSAvIGEwOwotICAgIAorCiAgICAgbV9i
+MCA9IGIwICogYTBJbnZlcnNlOwogICAgIG1fYjEgPSBiMSAqIGEwSW52ZXJzZTsKICAgICBtX2Iy
+ID0gYjIgKiBhMEludmVyc2U7CkBAIC0yNTEsNyArMjUwLDcgQEAgdm9pZCBCaXF1YWQ6OnNldExv
+d1NoZWxmUGFyYW1zKGRvdWJsZSBmcmVxdWVuY3ksIGRvdWJsZSBkYkdhaW4pCiAKICAgICBkb3Vi
+bGUgYVBsdXNPbmUgPSBBICsgMTsKICAgICBkb3VibGUgYU1pbnVzT25lID0gQSAtIDE7Ci0gICAg
+CisKICAgICBkb3VibGUgYjAgPSBBICogKGFQbHVzT25lIC0gYU1pbnVzT25lICogayArIGsyKTsK
+ICAgICBkb3VibGUgYjEgPSAyICogQSAqIChhTWludXNPbmUgLSBhUGx1c09uZSAqIGspOwogICAg
+IGRvdWJsZSBiMiA9IEEgKiAoYVBsdXNPbmUgLSBhTWludXNPbmUgKiBrIC0gazIpOwpAQCAtMjc1
+LDcgKzI3NCw3IEBAIHZvaWQgQmlxdWFkOjpzZXRIaWdoU2hlbGZQYXJhbXMoZG91YmxlIGZyZXF1
+ZW5jeSwgZG91YmxlIGRiR2FpbikKIAogICAgIGRvdWJsZSBhUGx1c09uZSA9IEEgKyAxOwogICAg
+IGRvdWJsZSBhTWludXNPbmUgPSBBIC0gMTsKLSAgICAKKwogICAgIGRvdWJsZSBiMCA9IEEgKiAo
+YVBsdXNPbmUgKyBhTWludXNPbmUgKiBrICsgazIpOwogICAgIGRvdWJsZSBiMSA9IC0yICogQSAq
+IChhTWludXNPbmUgKyBhUGx1c09uZSAqIGspOwogICAgIGRvdWJsZSBiMiA9IEEgKiAoYVBsdXNP
+bmUgKyBhTWludXNPbmUgKiBrIC0gazIpOwpAQCAtMzQ0LDcgKzM0Myw3IEBAIHZvaWQgQmlxdWFk
+OjpzZXRCYW5kcGFzc1BhcmFtcyhkb3VibGUgZnJlcXVlbmN5LCBkb3VibGUgUSkKICAgICBkb3Vi
+bGUgYWxwaGEgPSBzaW4odzApIC8gKDIgKiBRKTsKIAogICAgIGRvdWJsZSBrID0gY29zKHcwKTsK
+LSAgICAKKwogICAgIGRvdWJsZSBiMCA9IGFscGhhOwogICAgIGRvdWJsZSBiMSA9IDA7CiAgICAg
+ZG91YmxlIGIyID0gLWFscGhhOwpAQCAtNDAyLDcgKzQwMSw3IEBAIHZvaWQgQmlxdWFkOjpnZXRG
+cmVxdWVuY3lSZXNwb25zZShpbnQgbkZyZXF1ZW5jaWVzLAogICAgIGRvdWJsZSBiMiA9IG1fYjI7
+CiAgICAgZG91YmxlIGExID0gbV9hMTsKICAgICBkb3VibGUgYTIgPSBtX2EyOwotICAgIAorCiAg
+ICAgZm9yIChpbnQgayA9IDA7IGsgPCBuRnJlcXVlbmNpZXM7ICsraykgewogICAgICAgICBkb3Vi
+bGUgb21lZ2EgPSAtcGlEb3VibGUgKiBmcmVxdWVuY3lba107CiAgICAgICAgIENvbXBsZXggeiA9
+IENvbXBsZXgoY29zKG9tZWdhKSwgc2luKG9tZWdhKSk7Cg==
+</data>        
+
+              <flag name="review"
+                    id="114858"
+                    status="?"
+                    setter="rtoy@chromium.org"
+               />
+          </attachment>
+      
+
+    </bug>
+
+</bugzilla>

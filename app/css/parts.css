@@ -1,22 +1,115 @@
 #yomifuda{
+    width: 100%;
     vertical-align:middle;
 }
 
 #torifuda{
-    width:40%;
+    width: 100%;
     vertical-align:middle;
 
 }
 
-.branch{
-    background-color: rgba(255,255,255,0.15);
+.parent_branch{
+    background-color: rgba(0, 0, 0, 0.10);
     border-radius: 3px;
     padding: 3px;
     margin: 3px;
     display: inline-block;
 }
 
-.node{
+.branch{
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.node_box{
+    position: relative;
     padding: 1px;
     display: inline-block;
+}
+
+.node{
+    /*position: absolute;*/
+}
+
+#yomifuda .node_box{
+
+}
+
+#torifuda .node_box{
+    width: 10px;
+    height: 10px;
+}
+
+#torifuda .node{
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+
+}
+
+#torifuda .node:hover{
+    -webkit-animation: nodeAnim 5s ease 0s infinite normal;
+}
+
+@-webkit-keyframes nodeAnim{
+    /*0% {-webkit-transform: scale(1,1); background-color: #333333;}*/
+    /*5% {-webkit-transform: scale(1,1); background-color: #c71585;}*/
+    /*30% {-webkit-transform: scale(1.8,1.8); background-color: yellow;}*/
+    /*650%{-webkit-transform: scale(1.8,1.8); background-color: #adff2f;}*/
+    /*100%{-webkit-transform: scale(1.8,1.8); background-color: #333333;}*/
+    0% {-webkit-transform: rotate(0deg);background-color: #333333;}
+    25% {-webkit-transform: rotate(180deg);background-color: #c71585;}
+    50% {-webkit-transform: rotate(450deg);background-color: orange;}
+    75% {-webkit-transform: rotate(610deg);background-color: #adff2f;}
+    100% {-webkit-transform: rotate(720deg);background-color: #333333;}
+
+
+
+}
+
+@-webkit-keyframes nodeAnimEnd{
+    0% {-webkit-transform: scale(1.8,1.8);}
+    100% {-webkit-transform: scale(1,1);}
+}
+
+/*-------------- arrow ------------------*/
+.arrow_box {
+    display: none;
+    position: relative;
+    background: orange;
+    border: 1px solid orange;
+    width: 100px;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+    left: -50px;
+    top: -50px;
+}
+.arrow_box:after, .arrow_box:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: orange;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+.arrow_box:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: orange;
+    border-width: 11px;
+    left: 50%;
+    margin-left: -11px;
 }

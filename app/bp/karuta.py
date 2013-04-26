@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-import datetime
-import urllib
+import json
 import logging
-import re
 from google.appengine.ext import db
 from bp.base import Progress, Ingredient, Listable
 from bp.source import Source
-import dateutil.parser
 
 class Karuta(db.Model):
     """
@@ -21,15 +17,6 @@ class Karuta(db.Model):
     updated_at = db.DateTimeProperty(auto_now = True)
     source = db.ReferenceProperty(reference_class = Source, required = True)
     # ... Denoralized source detai will come here ...
-
-
-    @property
-	def plate(self):
-		return self.parent()
-
-    @property
-    def source_url(self):
-        return self.source.url
 
     @property
     def title(self):
@@ -58,6 +45,14 @@ class Karuta(db.Model):
     @property
     def view_url(self):
         return "/e/" + str(self.key())
+
+
+    @classmethod
+    def json_data(cls):
+
+        f = open("static/matrixEn.json")
+        data = json.load(f)
+        return data
 
     @classmethod
     def create(cls, plate, source_url):

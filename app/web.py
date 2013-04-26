@@ -6,11 +6,6 @@ sys.path.append("third_party/python-dateutil-2.1/")
 sys.path.append("third_party/six-1.1.0/")
 sys.path.append("third_party/beautifulsoup4-4.1.1/")
 
-import urllib
-import re
-import logging
-from xml.etree.ElementTree import ElementTree
-
 import flask as f
 import bp
 
@@ -27,7 +22,8 @@ def index():
 @app.route('/p', methods=['POST', 'GET'])
 def plate_index():
     if f.request.method == "GET":
-        return f.render_template("karuta_index.html")
+        data = bp.Karuta.json_data()
+        return f.render_template("karuta_index.html",word="", data=data)
     elif f.request.method == "POST":
         # user = bp.User.ensure(users.get_current_user())
         try:
@@ -44,29 +40,8 @@ def plate_index():
 
 @app.route('/p/<word>', methods=['POST', 'GET'])
 def plate(word):
-#    sample_text =u"八百屋お七（やおやおしち、寛文8年〈1668年〉? - 旧暦 天和3年3月28日〈西暦1683年4月24日〉、生年・命日に関して諸説ある）は、江戸時代前期、江戸本郷の八百屋の娘で、恋人に会いたい一心で放火事件を起こし火刑に処されたとされる少女である。"
-#    extract_p=re.compile("[\d]{2}")
-#    array = extract_p.search(sample_text).group(1)
-#    logging.info(type(sample_text))
-
-
-    url = urllib.urlopen('http://feeds.feedburner.com/GoogleJapanBlog')
-#    tree = ElementTree.parse(url)
-    #    element = tree.getroot()
-    #    title = element.find(".//title").tag
-#    logging.info("__"+ type(tree) +"__")
-    data=[
-        {'title':'title1','keyword':['keyword1','keyword2','keyword3'],'summary':'text'},
-        {'title':'title2','keyword':['keyword1'],'summary':'text'},
-        {'title':'title3','keyword':['keyword2','keyword3'],'summary':'text'},
-        {'title':'title4','keyword':['keyword1','keyword2','keyword4'],'summary':'text'}
-        ]
-
-#    f=open('json.txt','w')
-#    f.write(data)
-#
-#    f.close()
-    return f.render_template("karuta_index.html", word=word)
+    data = bp.Karuta.json_data()
+    return f.render_template("karuta_index.html", word=word, data=data)
 
 @app.route('/k', methods=['POST', 'GET'])
 def k():

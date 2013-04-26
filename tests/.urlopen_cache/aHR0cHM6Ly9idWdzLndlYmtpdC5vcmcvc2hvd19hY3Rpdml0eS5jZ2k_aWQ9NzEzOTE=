@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Changes made to bug 71391</title>
+
+
+<link rel="Top" href="https://bugs.webkit.org/">
+
+  
+
+  
+
+
+  
+    <link rel="Show" title="Dependency Tree"
+          href="showdependencytree.cgi?id=71391&amp;hide_resolved=1">
+      <link rel="Show" title="Dependency Graph"
+            href="showdependencygraph.cgi?id=71391">
+
+
+      <link rel="Show" title="Bug Activity"
+            href="show_activity.cgi?id=71391">
+      <link rel="Show" title="Printer-Friendly Version"
+            href="show_bug.cgi?format=multiple&amp;id=71391">
+
+
+    
+
+    
+      <link href="skins/standard/global.css"
+            rel="stylesheet"
+            type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="skins/standard/global.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <!--[if IE]>
+        
+        <link href="skins/standard/IE-fixes.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+        
+            <link href="skins/contrib/Dusk/global.css"
+                  rel="alternate stylesheet"
+                  title="Dusk"
+                  type="text/css">
+        <!--[if IE]>
+          
+          <link href="skins/contrib/Dusk/IE-fixes.css"
+                rel="alternate stylesheet"
+                title="Dusk"
+                type="text/css">
+        <![endif]-->
+
+    
+
+    
+        <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+
+
+
+
+    
+
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="Bugzilla" href="./search_plugin.cgi">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+  </head>
+
+
+
+  <body onload=""
+        class="bugs-webkit-org">
+
+
+
+
+<div id="header">
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>WebKit Bugzilla
+
+      </p>
+
+    </td>
+
+
+</tr>
+</table>
+
+
+    <div id="bug_title">Activity log for bug 71391: Make parameters for webaudio biquad filters consistent</div>
+
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_top"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=71391&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+
+</div>
+
+<div id="bugzilla-body">
+
+<p><a href="show_bug.cgi?id=71391" title="NEW - Make parameters for webaudio biquad filters consistent">Back to bug 71391</a>
+</p>
+<table border cellpadding="4">
+    <tr>
+      <th>Who</th>
+      <th>When</th>
+      <th>What</th>
+      <th>Removed</th>
+      <th>Added</th>
+    </tr>
+
+      <tr>
+        <td rowspan="1" valign="top">rtoy&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2011-11-02 13:18:04 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>rtoy&#64;chromium.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">rtoy&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2011-11-18 11:20:20 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=115839">
+                Attachment #115839</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">rtoy&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2012-01-25 13:32:55 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=71413" title="RESOLVED FIXED - Check parameters to biquad filters">71413</a></span>
+            </td>
+      </tr>
+  </table>
+
+  <p><a href="show_bug.cgi?id=71391" title="NEW - Make parameters for webaudio biquad filters consistent">Back to bug 71391</a>
+  </p>
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions">
+    <div class="label">Actions: </div><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_bottom"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=71391&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+  </li>
+
+  
+    
+
+  
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+<script defer src="/committers-autocomplete.js"></script>
+</body>
+</html>

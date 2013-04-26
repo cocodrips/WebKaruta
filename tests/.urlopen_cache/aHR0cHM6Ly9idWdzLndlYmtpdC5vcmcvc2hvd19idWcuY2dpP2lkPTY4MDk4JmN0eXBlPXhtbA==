@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE bugzilla SYSTEM "https://bugs.webkit.org/bugzilla.dtd">
+
+<bugzilla version="3.2.3"
+          urlbase="https://bugs.webkit.org/"
+          maintainer="admin@webkit.org"
+>
+
+    <bug>
+          <bug_id>68098</bug_id>
+          
+          <creation_ts>2011-09-14 11:53 PST</creation_ts>
+          <short_desc>ValueAuto and ValueMediumDPI are the same for all platforms.</short_desc>
+          <delta_ts>2011-12-20 12:38:24 PST</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>WebKit</product>
+          <component>Layout and Rendering</component>
+          <version>528+ (Nightly build)</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>UNCONFIRMED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>Normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          
+          <reporter name="Konrad Piascik">kpiascik@yahoo.com</reporter>
+          <assigned_to name="Nobody">webkit-unassigned@lists.webkit.org</assigned_to>
+          <cc>dbates@webkit.org</cc>
+    
+    <cc>joepeck@webkit.org</cc>
+    
+    <cc>kenneth@webkit.org</cc>
+    
+    <cc>kpiascik@rim.com</cc>
+    
+    <cc>tonikitoo@webkit.org</cc>
+
+      
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-14 11:53:49 PST</bug_when>
+            <thetext>Created an attachment (id=107365)
+Add default parameter to override the ValueAuto DPI.
+
+Allow platforms to specify their own default targetDensityDPI by adding a default parameter to the computeViewportAttributes method.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-14 15:10:36 PST</bug_when>
+            <thetext>(From update of attachment 107365)
+No changelog, no explanation why this is a good chance etc, thus r-</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-15 11:44:17 PST</bug_when>
+            <thetext>Created an attachment (id=107521)
+Updated patch with ChangeLog, explanation</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Antonio Gomes">tonikitoo@webkit.org</who>
+            <bug_when>2011-09-15 11:47:17 PST</bug_when>
+            <thetext>(From update of attachment 107521)
+View in context: https://bugs.webkit.org/attachment.cgi?id=107521&amp;action=review
+
+&gt; Source/WebCore/dom/ViewportArguments.cpp:63
+&gt;          args.targetDensityDpi = 120;
+&gt;          break;
+&gt;      case ViewportArguments::ValueAuto:
+&gt; +        args.targetDensityDpi = autoDPI;
+&gt; +        break;
+&gt;      case ViewportArguments::ValueMediumDPI:
+
+Should we really default-value it to 160, unlike the other parameters? Is it only to not update the call sites?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-15 11:50:55 PST</bug_when>
+            <thetext>(In reply to comment #3)
+&gt; (From update of attachment 107521 [details])
+&gt; View in context: https://bugs.webkit.org/attachment.cgi?id=107521&amp;action=review
+&gt; 
+&gt; &gt; Source/WebCore/dom/ViewportArguments.cpp:63
+&gt; &gt;          args.targetDensityDpi = 120;
+&gt; &gt;          break;
+&gt; &gt;      case ViewportArguments::ValueAuto:
+&gt; &gt; +        args.targetDensityDpi = autoDPI;
+&gt; &gt; +        break;
+&gt; &gt;      case ViewportArguments::ValueMediumDPI:
+&gt; 
+&gt; Should we really default-value it to 160, unlike the other parameters? Is it only to not update the call sites?
+
+That&apos;s my motivation for the default value.  If it&apos;s preferred I can update the call sites.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-15 12:10:49 PST</bug_when>
+            <thetext>(From update of attachment 107521)
+View in context: https://bugs.webkit.org/attachment.cgi?id=107521&amp;action=review
+
+&gt; Source/WebCore/ChangeLog:8
+&gt; +        Not all platforms should have the same default value for the
+&gt; +        targetDensityDPI. Added an optional parameter to allow
+&gt; +        platforms to override the default auto value.
+
+The default value is set to 160 for a reason. The reason being that that is what the original iOS used. Android even went as far as specifying what they call -density independent pixels- DIPS, which are specified as pixels at 160 DPI.
+
+Our devices (N9, N950) have a default DPI of 240 and we do not need this modification.
+
+Changing to another default is just going to break all pages designed with 160 in mind (most mobile pages), so I do not see how this is going to help with anything. 
+
+So so far I am not convinced this is the right thing to do.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-15 14:37:44 PST</bug_when>
+            <thetext>(In reply to comment #5)
+&gt; (From update of attachment 107521 [details])
+&gt; View in context: https://bugs.webkit.org/attachment.cgi?id=107521&amp;action=review
+&gt; 
+&gt; &gt; Source/WebCore/ChangeLog:8
+&gt; &gt; +        Not all platforms should have the same default value for the
+&gt; &gt; +        targetDensityDPI. Added an optional parameter to allow
+&gt; &gt; +        platforms to override the default auto value.
+&gt; 
+&gt; The default value is set to 160 for a reason. The reason being that that is what the original iOS used. Android even went as far as specifying what they call -density independent pixels- DIPS, which are specified as pixels at 160 DPI.
+&gt; 
+&gt; Our devices (N9, N950) have a default DPI of 240 and we do not need this modification.
+&gt; 
+&gt; Changing to another default is just going to break all pages designed with 160 in mind (most mobile pages), so I do not see how this is going to help with anything. 
+&gt; 
+&gt; So so far I am not convinced this is the right thing to do.
+
+Most mobile pages don&apos;t know or care about target density.  They code to a layout width, which is 320px for most sites.
+
+In order for a device to display 320px at a density of 160DPI then that device must be at least 2 inches wide(screen width).  computeViewportAttributes will calculate a layout width smaller than 320px if a device&apos;s screen width is less than 2 inches.
+
+This change allows each platform/device to specify its own default if needed.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-15 14:40:39 PST</bug_when>
+            <thetext>(In reply to comment #6)
+&gt; (In reply to comment #5)
+&gt; &gt; (From update of attachment 107521 [details] [details])
+&gt; &gt; View in context: https://bugs.webkit.org/attachment.cgi?id=107521&amp;action=review
+&gt; &gt; 
+&gt; &gt; &gt; Source/WebCore/ChangeLog:8
+&gt; &gt; &gt; +        Not all platforms should have the same default value for the
+&gt; &gt; &gt; +        targetDensityDPI. Added an optional parameter to allow
+&gt; &gt; &gt; +        platforms to override the default auto value.
+&gt; &gt; 
+&gt; &gt; The default value is set to 160 for a reason. The reason being that that is what the original iOS used. Android even went as far as specifying what they call -density independent pixels- DIPS, which are specified as pixels at 160 DPI.
+&gt; &gt; 
+&gt; &gt; Our devices (N9, N950) have a default DPI of 240 and we do not need this modification.
+&gt; &gt; 
+&gt; &gt; Changing to another default is just going to break all pages designed with 160 in mind (most mobile pages), so I do not see how this is going to help with anything. 
+&gt; &gt; 
+&gt; &gt; So so far I am not convinced this is the right thing to do.
+&gt; 
+&gt; Most mobile pages don&apos;t know or care about target density.  They code to a layout width, which is 320px for most sites.
+&gt; 
+&gt; In order for a device to display 320px at a density of 160DPI then that device must be at least 2 inches wide(screen width).  computeViewportAttributes will calculate a layout width smaller than 320px if a device&apos;s screen width is less than 2 inches.
+&gt; 
+&gt; This change allows each platform/device to specify its own default if needed.
+
+This would be good to add as a comment in the code and in the ChangeLog. This explains a lot.
+
+I don&apos;t like the argument name much, what about something like maximumDPI instead? Would something like that be possible?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-15 14:41:18 PST</bug_when>
+            <thetext>
+&gt; I don&apos;t like the argument name much, what about something like maximumDPI instead? Would something like that be possible?
+
+Or change the algorithm to bound the DPI by the deviceDPI? Wouldn&apos;t that make more sense?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-16 06:33:06 PST</bug_when>
+            <thetext>(In reply to comment #8)
+&gt; &gt; I don&apos;t like the argument name much, what about something like maximumDPI instead? Would something like that be possible?
+&gt; 
+&gt; Or change the algorithm to bound the DPI by the deviceDPI? Wouldn&apos;t that make more sense?
+
+The change that I&apos;m proposing is to override the default value of 160 to be device/platform configurable.  We already have bounds on the web page specified DPI.
+
+If a web developer wants to specify a target DPI different than the default then they should be able to do so, within the already defined bounds.  This would allow the web developer to have more control, assuming they know what they&apos;re doing, and still give a device/platform the ability to better control how things DPI correction works in the default case.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@yahoo.com</who>
+            <bug_when>2011-09-19 06:38:09 PST</bug_when>
+            <thetext>Created an attachment (id=107846)
+Updated ChangeLog and variable name</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-19 14:53:32 PST</bug_when>
+            <thetext>(From update of attachment 107846)
+View in context: https://bugs.webkit.org/attachment.cgi?id=107846&amp;action=review
+
+&gt; Source/WebCore/ChangeLog:6
+&gt; +        320px is the layout widht which most mobile sites use as a
+
+*width
+
+&gt; Source/WebCore/ChangeLog:13
+&gt; +        mobile web pages.  Allowing a platform specific default
+&gt; +        value to be set for ValueAuto of targetDensityDPI helps deal
+&gt; +        with this case.
+
+Would be great if you made it clear how it helps. Maybe adding some comments to computeViewportAttributes in the header file. This is done elsewhere in WebKit
+
+&gt; Source/WebCore/ChangeLog:17
+&gt; +        No new tests needed, since it causes no behavioral change.
+
+It would be good for tests emulating a screen less than 2 inches so we can all get the same behavior.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Kenneth Rohde Christiansen">kenneth@webkit.org</who>
+            <bug_when>2011-09-19 14:55:24 PST</bug_when>
+            <thetext>Antonio can you help Konrad with this? The problem is said, but it is a bit vage how it is dealt with. I also believe that it should be possible to do some tests and add a bit of api documentation. Also knowing how this is dealt with on most current devices; blackberry, android with screens less than 2 inches would be good info.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Eric Seidel">eric@webkit.org</who>
+            <bug_when>2011-12-19 13:58:06 PST</bug_when>
+            <thetext>(From update of attachment 107846)
+Can we test this?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Konrad Piascik">kpiascik@rim.com</who>
+            <bug_when>2011-12-20 12:38:24 PST</bug_when>
+            <thetext>(In reply to comment #13)
+&gt; (From update of attachment 107846 [details])
+&gt; Can we test this?
+
+We currently test all output from the computeViewportAttributes method except the devicePixelRatio.  Adjusting the AutoDPI value would affect the devicePixelRatio.  This property should be accessible through javascript via window.devicePixelRatio, however I&apos;m not sure if all ports set this value to reflect the output of computeViewporAttributes.</thetext>
+          </long_desc>
+      
+          <attachment
+              isobsolete="1"
+              ispatch="1"
+              isprivate="0"
+          >
+            <attachid>107365</attachid>
+            <date>2011-09-14 11:53 PST</date>
+            <desc>Add default parameter to override the ValueAuto DPI.</desc>
+            <filename>viewport.patch</filename>
+            <type>text/plain</type>
+            <size>2650</size>
+            <attacher>kpiascik@yahoo.com</attacher>
+            
+              <data encoding="base64">RnJvbSAyMzE0Yjk3YjhlNDBmNGRkNTEzNzg3ZGZiMjM1MzZiNzRiOWEyYzg5IE1vbiBTZXAgMTcg
+MDA6MDA6MDAgMjAwMQpGcm9tOiBLb25yYWQgUGlhc2NpayA8a3BpYXNjaWtAcmltLmNvbT4KRGF0
+ZTogV2VkLCAxNCBTZXAgMjAxMSAxMjoxMDoxMCAtMDQwMApTdWJqZWN0OiBbUEFUQ0hdIDIwMTEt
+MDktMTQgIEtvbnJhZCBQaWFzY2lrICA8a3BpYXNjaWtAcmltLmNvbT4KCiAgICAgICAgQWRkZWQg
+YW4gb3B0aW9uYWwgcGFyYW1ldGVyIHRvIHNwZWNpZnkgdGhlIGF1dG8gdmFsdWUgZm9yIHRhcmdl
+dERlbnNpdHlEUEkuCiAgICAgICAgVGhlIFZhbHVlQXV0byBhbmQgVmFsdWVNZWRpdW1EUEkgY3Vy
+cmVudGx5IGFyZSBib3RoIDE2MC4gIFRoaXMgYWxsb3dzIHBsYXRmb3JtcyB0bwogICAgICAgIHNw
+ZWNpZnkgcGxhdGZvcm0gc3BlY2lmaWMgZGVmYXVsdCB2YWx1ZS4KCiAgICAgICAgUmV2aWV3ZWQg
+YnkgTk9CT0RZIChPT1BTISkuCgogICAgICAgIE5vIG5ldyB0ZXN0cy4gKE9PUFMhKQoKICAgICAg
+ICAqIGRvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHA6CiAgICAgICAgKFdlYkNvcmU6OmNvbXB1dGVW
+aWV3cG9ydEF0dHJpYnV0ZXMpOgogICAgICAgICogZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmg6Ci0t
+LQogU291cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmNwcCB8ICAgIDQgKysrLQog
+U291cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmggICB8ICAgIDIgKy0KIDIgZmls
+ZXMgY2hhbmdlZCwgNCBpbnNlcnRpb25zKCspLCAyIGRlbGV0aW9ucygtKQoKZGlmZiAtLWdpdCBh
+L1NvdXJjZS9XZWJDb3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHAgYi9Tb3VyY2UvV2ViQ29y
+ZS9kb20vVmlld3BvcnRBcmd1bWVudHMuY3BwCmluZGV4IDcxZjE2ODIuLjNhN2VkYTMgMTAwNjQ0
+Ci0tLSBhL1NvdXJjZS9XZWJDb3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHAKKysrIGIvU291
+cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmNwcApAQCAtNDEsNyArNDEsNyBAQCB1
+c2luZyBuYW1lc3BhY2Ugc3RkOwogCiBuYW1lc3BhY2UgV2ViQ29yZSB7CiAKLVZpZXdwb3J0QXR0
+cmlidXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKFZpZXdwb3J0QXJndW1lbnRzIGFyZ3Ms
+IGludCBkZXNrdG9wV2lkdGgsIGludCBkZXZpY2VXaWR0aCwgaW50IGRldmljZUhlaWdodCwgaW50
+IGRldmljZURQSSwgSW50U2l6ZSB2aXNpYmxlVmlld3BvcnQpCitWaWV3cG9ydEF0dHJpYnV0ZXMg
+Y29tcHV0ZVZpZXdwb3J0QXR0cmlidXRlcyhWaWV3cG9ydEFyZ3VtZW50cyBhcmdzLCBpbnQgZGVz
+a3RvcFdpZHRoLCBpbnQgZGV2aWNlV2lkdGgsIGludCBkZXZpY2VIZWlnaHQsIGludCBkZXZpY2VE
+UEksIEludFNpemUgdmlzaWJsZVZpZXdwb3J0LCBkb3VibGUgYXV0b0RQSSkKIHsKICAgICBWaWV3
+cG9ydEF0dHJpYnV0ZXMgcmVzdWx0OwogCkBAIC01OCw2ICs1OCw4IEBAIFZpZXdwb3J0QXR0cmli
+dXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKFZpZXdwb3J0QXJndW1lbnRzIGFyZ3MsIGlu
+dCBkZXNrdG9wCiAgICAgICAgIGFyZ3MudGFyZ2V0RGVuc2l0eURwaSA9IDEyMDsKICAgICAgICAg
+YnJlYWs7CiAgICAgY2FzZSBWaWV3cG9ydEFyZ3VtZW50czo6VmFsdWVBdXRvOgorICAgICAgICBh
+cmdzLnRhcmdldERlbnNpdHlEcGkgPSBhdXRvRFBJOworICAgICAgICBicmVhazsKICAgICBjYXNl
+IFZpZXdwb3J0QXJndW1lbnRzOjpWYWx1ZU1lZGl1bURQSToKICAgICAgICAgYXJncy50YXJnZXRE
+ZW5zaXR5RHBpID0gMTYwOwogICAgICAgICBicmVhazsKZGlmZiAtLWdpdCBhL1NvdXJjZS9XZWJD
+b3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5oIGIvU291cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0
+QXJndW1lbnRzLmgKaW5kZXggNjZiYjI4MS4uNGMwZGJjYSAxMDA2NDQKLS0tIGEvU291cmNlL1dl
+YkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmgKKysrIGIvU291cmNlL1dlYkNvcmUvZG9tL1Zp
+ZXdwb3J0QXJndW1lbnRzLmgKQEAgLTk4LDcgKzk4LDcgQEAgc3RydWN0IFZpZXdwb3J0QXJndW1l
+bnRzIHsKICAgICB9CiB9OwogCi1WaWV3cG9ydEF0dHJpYnV0ZXMgY29tcHV0ZVZpZXdwb3J0QXR0
+cmlidXRlcyhWaWV3cG9ydEFyZ3VtZW50cyBhcmdzLCBpbnQgZGVza3RvcFdpZHRoLCBpbnQgZGV2
+aWNlV2lkdGgsIGludCBkZXZpY2VIZWlnaHQsIGludCBkZXZpY2VEUEksIEludFNpemUgdmlzaWJs
+ZVZpZXdwb3J0KTsKK1ZpZXdwb3J0QXR0cmlidXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVz
+KFZpZXdwb3J0QXJndW1lbnRzIGFyZ3MsIGludCBkZXNrdG9wV2lkdGgsIGludCBkZXZpY2VXaWR0
+aCwgaW50IGRldmljZUhlaWdodCwgaW50IGRldmljZURQSSwgSW50U2l6ZSB2aXNpYmxlVmlld3Bv
+cnQsIGRvdWJsZSBhdXRvRFBJID0gMTYwKTsKIAogdm9pZCBzZXRWaWV3cG9ydEZlYXR1cmUoY29u
+c3QgU3RyaW5nJiBrZXlTdHJpbmcsIGNvbnN0IFN0cmluZyYgdmFsdWVTdHJpbmcsIERvY3VtZW50
+Kiwgdm9pZCogZGF0YSk7CiB2b2lkIHJlcG9ydFZpZXdwb3J0V2FybmluZyhEb2N1bWVudCosIFZp
+ZXdwb3J0RXJyb3JDb2RlLCBjb25zdCBTdHJpbmcmIHJlcGxhY2VtZW50MSwgY29uc3QgU3RyaW5n
+JiByZXBsYWNlbWVudDIpOwotLSAKMS43LjEKCg==
+</data>        
+
+              <flag name="review"
+                    id="104049"
+                    status="-"
+                    setter="kenneth@webkit.org"
+               />
+          </attachment>
+          <attachment
+              isobsolete="1"
+              ispatch="1"
+              isprivate="0"
+          >
+            <attachid>107521</attachid>
+            <date>2011-09-15 11:44 PST</date>
+            <desc>Updated patch with ChangeLog, explanation</desc>
+            <filename>viewport.patch</filename>
+            <type>text/plain</type>
+            <size>3723</size>
+            <attacher>kpiascik@yahoo.com</attacher>
+            
+              <data encoding="base64">RnJvbSAyMmM2YTIzZDkyZDBkNzdlOWNjM2I3ZmFiODc0ZDA0NGI2YWM0N2QyIE1vbiBTZXAgMTcg
+MDA6MDA6MDAgMjAwMQpGcm9tOiBLb25yYWQgUGlhc2NpayA8a3BpYXNjaWtAcmltLmNvbT4KRGF0
+ZTogVGh1LCAxNSBTZXAgMjAxMSAxNDozNjo1NyAtMDQwMApTdWJqZWN0OiBbUEFUQ0hdIDIwMTEt
+MDktMTUgIEtvbnJhZCBQaWFzY2lrICA8a3BpYXNjaWtAcmltLmNvbT4KCiAgICAgICAgVmFsdWVB
+dXRvIGFuZCBWYWx1ZU1lZGl1bURQSSBhcmUgdGhlIHNhbWUgZm9yIGFsbCBwbGF0Zm9ybXMuCiAg
+ICAgICAgaHR0cHM6Ly9idWdzLndlYmtpdC5vcmcvc2hvd19idWcuY2dpP2lkPTY4MDk4CgogICAg
+ICAgIE5vdCBhbGwgcGxhdGZvcm1zIHNob3VsZCBoYXZlIHRoZSBzYW1lIGRlZmF1bHQgdmFsdWUg
+Zm9yIHRoZQogICAgICAgIHRhcmdldERlbnNpdHlEUEkuIEFkZGVkIGFuIG9wdGlvbmFsIHBhcmFt
+ZXRlciB0byBhbGxvdwogICAgICAgIHBsYXRmb3JtcyB0byBvdmVycmlkZSB0aGUgZGVmYXVsdCBh
+dXRvIHZhbHVlLgoKICAgICAgICBSZXZpZXdlZCBieSBOT0JPRFkgKE9PUFMhKS4KCiAgICAgICAg
+Tm8gbmV3IHRlc3RzIG5lZWRlZCwgc2luY2UgaXQgY2F1c2VzIG5vIGJlaGF2aW9yYWwgY2hhbmdl
+LgoKICAgICAgICAqIGRvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHA6CiAgICAgICAgKFdlYkNvcmU6
+OmNvbXB1dGVWaWV3cG9ydEF0dHJpYnV0ZXMpOgogICAgICAgICogZG9tL1ZpZXdwb3J0QXJndW1l
+bnRzLmg6Ci0tLQogU291cmNlL1dlYkNvcmUvQ2hhbmdlTG9nICAgICAgICAgICAgICAgICB8ICAg
+MTcgKysrKysrKysrKysrKysrKysKIFNvdXJjZS9XZWJDb3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50
+cy5jcHAgfCAgICA0ICsrKy0KIFNvdXJjZS9XZWJDb3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5o
+ICAgfCAgICAyICstCiAzIGZpbGVzIGNoYW5nZWQsIDIxIGluc2VydGlvbnMoKyksIDIgZGVsZXRp
+b25zKC0pCgpkaWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUvQ2hhbmdlTG9nIGIvU291cmNlL1dl
+YkNvcmUvQ2hhbmdlTG9nCmluZGV4IDc4MGI1YWYuLmY0NTE1YTkgMTAwNzU1Ci0tLSBhL1NvdXJj
+ZS9XZWJDb3JlL0NoYW5nZUxvZworKysgYi9Tb3VyY2UvV2ViQ29yZS9DaGFuZ2VMb2cKQEAgLTEs
+MyArMSwyMCBAQAorMjAxMS0wOS0xNSAgS29ucmFkIFBpYXNjaWsgIDxrcGlhc2Npa0ByaW0uY29t
+PgorCisgICAgICAgIFZhbHVlQXV0byBhbmQgVmFsdWVNZWRpdW1EUEkgYXJlIHRoZSBzYW1lIGZv
+ciBhbGwgcGxhdGZvcm1zLgorICAgICAgICBodHRwczovL2J1Z3Mud2Via2l0Lm9yZy9zaG93X2J1
+Zy5jZ2k/aWQ9NjgwOTgKKworICAgICAgICBOb3QgYWxsIHBsYXRmb3JtcyBzaG91bGQgaGF2ZSB0
+aGUgc2FtZSBkZWZhdWx0IHZhbHVlIGZvciB0aGUKKyAgICAgICAgdGFyZ2V0RGVuc2l0eURQSS4g
+QWRkZWQgYW4gb3B0aW9uYWwgcGFyYW1ldGVyIHRvIGFsbG93CisgICAgICAgIHBsYXRmb3JtcyB0
+byBvdmVycmlkZSB0aGUgZGVmYXVsdCBhdXRvIHZhbHVlLgorCisgICAgICAgIFJldmlld2VkIGJ5
+IE5PQk9EWSAoT09QUyEpLgorCisgICAgICAgIE5vIG5ldyB0ZXN0cyBuZWVkZWQsIHNpbmNlIGl0
+IGNhdXNlcyBubyBiZWhhdmlvcmFsIGNoYW5nZS4KKworICAgICAgICAqIGRvbS9WaWV3cG9ydEFy
+Z3VtZW50cy5jcHA6CisgICAgICAgIChXZWJDb3JlOjpjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVz
+KToKKyAgICAgICAgKiBkb20vVmlld3BvcnRBcmd1bWVudHMuaDoKKwogMjAxMS0wOS0wOSAgT2xp
+dmVyIEh1bnQgIDxvbGl2ZXJAYXBwbGUuY29tPgogCiAgICAgICAgIFJlbW92ZSBzdXBwb3J0IGZv
+ciBhbm9ueW1vdXMgc3RvcmFnZSBmcm9tIGpzb2JqZWN0cwpkaWZmIC0tZ2l0IGEvU291cmNlL1dl
+YkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmNwcCBiL1NvdXJjZS9XZWJDb3JlL2RvbS9WaWV3
+cG9ydEFyZ3VtZW50cy5jcHAKaW5kZXggNzFmMTY4Mi4uM2E3ZWRhMyAxMDA2NDQKLS0tIGEvU291
+cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0QXJndW1lbnRzLmNwcAorKysgYi9Tb3VyY2UvV2ViQ29y
+ZS9kb20vVmlld3BvcnRBcmd1bWVudHMuY3BwCkBAIC00MSw3ICs0MSw3IEBAIHVzaW5nIG5hbWVz
+cGFjZSBzdGQ7CiAKIG5hbWVzcGFjZSBXZWJDb3JlIHsKIAotVmlld3BvcnRBdHRyaWJ1dGVzIGNv
+bXB1dGVWaWV3cG9ydEF0dHJpYnV0ZXMoVmlld3BvcnRBcmd1bWVudHMgYXJncywgaW50IGRlc2t0
+b3BXaWR0aCwgaW50IGRldmljZVdpZHRoLCBpbnQgZGV2aWNlSGVpZ2h0LCBpbnQgZGV2aWNlRFBJ
+LCBJbnRTaXplIHZpc2libGVWaWV3cG9ydCkKK1ZpZXdwb3J0QXR0cmlidXRlcyBjb21wdXRlVmll
+d3BvcnRBdHRyaWJ1dGVzKFZpZXdwb3J0QXJndW1lbnRzIGFyZ3MsIGludCBkZXNrdG9wV2lkdGgs
+IGludCBkZXZpY2VXaWR0aCwgaW50IGRldmljZUhlaWdodCwgaW50IGRldmljZURQSSwgSW50U2l6
+ZSB2aXNpYmxlVmlld3BvcnQsIGRvdWJsZSBhdXRvRFBJKQogewogICAgIFZpZXdwb3J0QXR0cmli
+dXRlcyByZXN1bHQ7CiAKQEAgLTU4LDYgKzU4LDggQEAgVmlld3BvcnRBdHRyaWJ1dGVzIGNvbXB1
+dGVWaWV3cG9ydEF0dHJpYnV0ZXMoVmlld3BvcnRBcmd1bWVudHMgYXJncywgaW50IGRlc2t0b3AK
+ICAgICAgICAgYXJncy50YXJnZXREZW5zaXR5RHBpID0gMTIwOwogICAgICAgICBicmVhazsKICAg
+ICBjYXNlIFZpZXdwb3J0QXJndW1lbnRzOjpWYWx1ZUF1dG86CisgICAgICAgIGFyZ3MudGFyZ2V0
+RGVuc2l0eURwaSA9IGF1dG9EUEk7CisgICAgICAgIGJyZWFrOwogICAgIGNhc2UgVmlld3BvcnRB
+cmd1bWVudHM6OlZhbHVlTWVkaXVtRFBJOgogICAgICAgICBhcmdzLnRhcmdldERlbnNpdHlEcGkg
+PSAxNjA7CiAgICAgICAgIGJyZWFrOwpkaWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUvZG9tL1Zp
+ZXdwb3J0QXJndW1lbnRzLmggYi9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRBcmd1bWVudHMu
+aAppbmRleCA2NmJiMjgxLi40YzBkYmNhIDEwMDY0NAotLS0gYS9Tb3VyY2UvV2ViQ29yZS9kb20v
+Vmlld3BvcnRBcmd1bWVudHMuaAorKysgYi9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRBcmd1
+bWVudHMuaApAQCAtOTgsNyArOTgsNyBAQCBzdHJ1Y3QgVmlld3BvcnRBcmd1bWVudHMgewogICAg
+IH0KIH07CiAKLVZpZXdwb3J0QXR0cmlidXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKFZp
+ZXdwb3J0QXJndW1lbnRzIGFyZ3MsIGludCBkZXNrdG9wV2lkdGgsIGludCBkZXZpY2VXaWR0aCwg
+aW50IGRldmljZUhlaWdodCwgaW50IGRldmljZURQSSwgSW50U2l6ZSB2aXNpYmxlVmlld3BvcnQp
+OworVmlld3BvcnRBdHRyaWJ1dGVzIGNvbXB1dGVWaWV3cG9ydEF0dHJpYnV0ZXMoVmlld3BvcnRB
+cmd1bWVudHMgYXJncywgaW50IGRlc2t0b3BXaWR0aCwgaW50IGRldmljZVdpZHRoLCBpbnQgZGV2
+aWNlSGVpZ2h0LCBpbnQgZGV2aWNlRFBJLCBJbnRTaXplIHZpc2libGVWaWV3cG9ydCwgZG91Ymxl
+IGF1dG9EUEkgPSAxNjApOwogCiB2b2lkIHNldFZpZXdwb3J0RmVhdHVyZShjb25zdCBTdHJpbmcm
+IGtleVN0cmluZywgY29uc3QgU3RyaW5nJiB2YWx1ZVN0cmluZywgRG9jdW1lbnQqLCB2b2lkKiBk
+YXRhKTsKIHZvaWQgcmVwb3J0Vmlld3BvcnRXYXJuaW5nKERvY3VtZW50KiwgVmlld3BvcnRFcnJv
+ckNvZGUsIGNvbnN0IFN0cmluZyYgcmVwbGFjZW1lbnQxLCBjb25zdCBTdHJpbmcmIHJlcGxhY2Vt
+ZW50Mik7Ci0tIAoxLjcuMQoK
+</data>        
+
+          </attachment>
+          <attachment
+              isobsolete="0"
+              ispatch="1"
+              isprivate="0"
+          >
+            <attachid>107846</attachid>
+            <date>2011-09-19 06:38 PST</date>
+            <desc>Updated ChangeLog and variable name</desc>
+            <filename>viewport2.patch</filename>
+            <type>text/plain</type>
+            <size>4344</size>
+            <attacher>kpiascik@yahoo.com</attacher>
+            
+              <data encoding="base64">RnJvbSA1NzhlZDMwMGVkYjkwN2U0NTYzNjUxMzgwN2RiY2FhMzkxZmUxNjA5IE1vbiBTZXAgMTcg
+MDA6MDA6MDAgMjAwMQpGcm9tOiBLb25yYWQgUGlhc2NpayA8a3BpYXNjaWtAcmltLmNvbT4KRGF0
+ZTogVGh1LCAxNSBTZXAgMjAxMSAxNDozNjo1NyAtMDQwMApTdWJqZWN0OiBbUEFUQ0hdIDIwMTEt
+MDktMTkgIEtvbnJhZCBQaWFzY2lrICA8a3BpYXNjaWtAcmltLmNvbT4KCiAgICAgICAgVmFsdWVB
+dXRvIGFuZCBWYWx1ZU1lZGl1bURQSSBhcmUgdGhlIHNhbWUgZm9yIGFsbCBwbGF0Zm9ybXMuCiAg
+ICAgICAgaHR0cHM6Ly9idWdzLndlYmtpdC5vcmcvc2hvd19idWcuY2dpP2lkPTY4MDk4CgogICAg
+ICAgIDMyMHB4IGlzIHRoZSBsYXlvdXQgd2lkaHQgd2hpY2ggbW9zdCBtb2JpbGUgc2l0ZXMgdXNl
+IGFzIGEKICAgICAgICBkZWZhdWx0IG9yIG1pbmltdW0uICBXaXRoIFZhbHVlQXV0byBmb3IgdGFy
+Z2V0RGVuc2l0eURQSQogICAgICAgIGJlaW5nIDE2MCwgYW55IGRldmljZSB3aG9zZSBwaHlzaWNh
+bCBzY3JlZW4gd2lkdGggaXMgbGVzcwogICAgICAgIHRoYW4gMiBpbmNoZXMgd2lsbCBoYXZlIGEg
+dmlld3BvcnQgd2lkdGggY2FsY3VsYXRlZCB0byBiZQogICAgICAgIGxlc3MgdGhhbiAzMjBweCBh
+bmQgaGF2ZSBhbiBpbnZhbGlkIGxheW91dCB3aWR0aCBmb3IgbW9zdAogICAgICAgIG1vYmlsZSB3
+ZWIgcGFnZXMuICBBbGxvd2luZyBhIHBsYXRmb3JtIHNwZWNpZmljIGRlZmF1bHQKICAgICAgICB2
+YWx1ZSB0byBiZSBzZXQgZm9yIFZhbHVlQXV0byBvZiB0YXJnZXREZW5zaXR5RFBJIGhlbHBzIGRl
+YWwKICAgICAgICB3aXRoIHRoaXMgY2FzZS4KCiAgICAgICAgUmV2aWV3ZWQgYnkgTk9CT0RZIChP
+T1BTISkuCgogICAgICAgIE5vIG5ldyB0ZXN0cyBuZWVkZWQsIHNpbmNlIGl0IGNhdXNlcyBubyBi
+ZWhhdmlvcmFsIGNoYW5nZS4KCiAgICAgICAgKiBkb20vVmlld3BvcnRBcmd1bWVudHMuY3BwOgog
+ICAgICAgIChXZWJDb3JlOjpjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKToKICAgICAgICAqIGRv
+bS9WaWV3cG9ydEFyZ3VtZW50cy5oOgotLS0KIFNvdXJjZS9XZWJDb3JlL0NoYW5nZUxvZyAgICAg
+ICAgICAgICAgICAgfCAgIDIyICsrKysrKysrKysrKysrKysrKysrKysKIFNvdXJjZS9XZWJDb3Jl
+L2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHAgfCAgICA0ICsrKy0KIFNvdXJjZS9XZWJDb3JlL2Rv
+bS9WaWV3cG9ydEFyZ3VtZW50cy5oICAgfCAgICAyICstCiAzIGZpbGVzIGNoYW5nZWQsIDI2IGlu
+c2VydGlvbnMoKyksIDIgZGVsZXRpb25zKC0pCgpkaWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUv
+Q2hhbmdlTG9nIGIvU291cmNlL1dlYkNvcmUvQ2hhbmdlTG9nCmluZGV4IDc4MGI1YWYuLmY4NmRm
+YzAgMTAwNzU1Ci0tLSBhL1NvdXJjZS9XZWJDb3JlL0NoYW5nZUxvZworKysgYi9Tb3VyY2UvV2Vi
+Q29yZS9DaGFuZ2VMb2cKQEAgLTEsMyArMSwyNSBAQAorMjAxMS0wOS0xOSAgS29ucmFkIFBpYXNj
+aWsgIDxrcGlhc2Npa0ByaW0uY29tPgorCisgICAgICAgIFZhbHVlQXV0byBhbmQgVmFsdWVNZWRp
+dW1EUEkgYXJlIHRoZSBzYW1lIGZvciBhbGwgcGxhdGZvcm1zLgorICAgICAgICBodHRwczovL2J1
+Z3Mud2Via2l0Lm9yZy9zaG93X2J1Zy5jZ2k/aWQ9NjgwOTgKKworICAgICAgICAzMjBweCBpcyB0
+aGUgbGF5b3V0IHdpZGh0IHdoaWNoIG1vc3QgbW9iaWxlIHNpdGVzIHVzZSBhcyBhCisgICAgICAg
+IGRlZmF1bHQgb3IgbWluaW11bS4gIFdpdGggVmFsdWVBdXRvIGZvciB0YXJnZXREZW5zaXR5RFBJ
+CisgICAgICAgIGJlaW5nIDE2MCwgYW55IGRldmljZSB3aG9zZSBwaHlzaWNhbCBzY3JlZW4gd2lk
+dGggaXMgbGVzcworICAgICAgICB0aGFuIDIgaW5jaGVzIHdpbGwgaGF2ZSBhIHZpZXdwb3J0IHdp
+ZHRoIGNhbGN1bGF0ZWQgdG8gYmUKKyAgICAgICAgbGVzcyB0aGFuIDMyMHB4IGFuZCBoYXZlIGFu
+IGludmFsaWQgbGF5b3V0IHdpZHRoIGZvciBtb3N0CisgICAgICAgIG1vYmlsZSB3ZWIgcGFnZXMu
+ICBBbGxvd2luZyBhIHBsYXRmb3JtIHNwZWNpZmljIGRlZmF1bHQKKyAgICAgICAgdmFsdWUgdG8g
+YmUgc2V0IGZvciBWYWx1ZUF1dG8gb2YgdGFyZ2V0RGVuc2l0eURQSSBoZWxwcyBkZWFsCisgICAg
+ICAgIHdpdGggdGhpcyBjYXNlLgorCisgICAgICAgIFJldmlld2VkIGJ5IE5PQk9EWSAoT09QUyEp
+LgorCisgICAgICAgIE5vIG5ldyB0ZXN0cyBuZWVkZWQsIHNpbmNlIGl0IGNhdXNlcyBubyBiZWhh
+dmlvcmFsIGNoYW5nZS4KKworICAgICAgICAqIGRvbS9WaWV3cG9ydEFyZ3VtZW50cy5jcHA6Cisg
+ICAgICAgIChXZWJDb3JlOjpjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKToKKyAgICAgICAgKiBk
+b20vVmlld3BvcnRBcmd1bWVudHMuaDoKKwogMjAxMS0wOS0wOSAgT2xpdmVyIEh1bnQgIDxvbGl2
+ZXJAYXBwbGUuY29tPgogCiAgICAgICAgIFJlbW92ZSBzdXBwb3J0IGZvciBhbm9ueW1vdXMgc3Rv
+cmFnZSBmcm9tIGpzb2JqZWN0cwpkaWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUvZG9tL1ZpZXdw
+b3J0QXJndW1lbnRzLmNwcCBiL1NvdXJjZS9XZWJDb3JlL2RvbS9WaWV3cG9ydEFyZ3VtZW50cy5j
+cHAKaW5kZXggNzFmMTY4Mi4uY2I3YTRkMSAxMDA2NDQKLS0tIGEvU291cmNlL1dlYkNvcmUvZG9t
+L1ZpZXdwb3J0QXJndW1lbnRzLmNwcAorKysgYi9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRB
+cmd1bWVudHMuY3BwCkBAIC00MSw3ICs0MSw3IEBAIHVzaW5nIG5hbWVzcGFjZSBzdGQ7CiAKIG5h
+bWVzcGFjZSBXZWJDb3JlIHsKIAotVmlld3BvcnRBdHRyaWJ1dGVzIGNvbXB1dGVWaWV3cG9ydEF0
+dHJpYnV0ZXMoVmlld3BvcnRBcmd1bWVudHMgYXJncywgaW50IGRlc2t0b3BXaWR0aCwgaW50IGRl
+dmljZVdpZHRoLCBpbnQgZGV2aWNlSGVpZ2h0LCBpbnQgZGV2aWNlRFBJLCBJbnRTaXplIHZpc2li
+bGVWaWV3cG9ydCkKK1ZpZXdwb3J0QXR0cmlidXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVz
+KFZpZXdwb3J0QXJndW1lbnRzIGFyZ3MsIGludCBkZXNrdG9wV2lkdGgsIGludCBkZXZpY2VXaWR0
+aCwgaW50IGRldmljZUhlaWdodCwgaW50IGRldmljZURQSSwgSW50U2l6ZSB2aXNpYmxlVmlld3Bv
+cnQsIGRvdWJsZSBkZWZhdWx0RFBJKQogewogICAgIFZpZXdwb3J0QXR0cmlidXRlcyByZXN1bHQ7
+CiAKQEAgLTU4LDYgKzU4LDggQEAgVmlld3BvcnRBdHRyaWJ1dGVzIGNvbXB1dGVWaWV3cG9ydEF0
+dHJpYnV0ZXMoVmlld3BvcnRBcmd1bWVudHMgYXJncywgaW50IGRlc2t0b3AKICAgICAgICAgYXJn
+cy50YXJnZXREZW5zaXR5RHBpID0gMTIwOwogICAgICAgICBicmVhazsKICAgICBjYXNlIFZpZXdw
+b3J0QXJndW1lbnRzOjpWYWx1ZUF1dG86CisgICAgICAgIGFyZ3MudGFyZ2V0RGVuc2l0eURwaSA9
+IGRlZmF1bHREUEk7CisgICAgICAgIGJyZWFrOwogICAgIGNhc2UgVmlld3BvcnRBcmd1bWVudHM6
+OlZhbHVlTWVkaXVtRFBJOgogICAgICAgICBhcmdzLnRhcmdldERlbnNpdHlEcGkgPSAxNjA7CiAg
+ICAgICAgIGJyZWFrOwpkaWZmIC0tZ2l0IGEvU291cmNlL1dlYkNvcmUvZG9tL1ZpZXdwb3J0QXJn
+dW1lbnRzLmggYi9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRBcmd1bWVudHMuaAppbmRleCA2
+NmJiMjgxLi4xNTI4OGY2IDEwMDY0NAotLS0gYS9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRB
+cmd1bWVudHMuaAorKysgYi9Tb3VyY2UvV2ViQ29yZS9kb20vVmlld3BvcnRBcmd1bWVudHMuaApA
+QCAtOTgsNyArOTgsNyBAQCBzdHJ1Y3QgVmlld3BvcnRBcmd1bWVudHMgewogICAgIH0KIH07CiAK
+LVZpZXdwb3J0QXR0cmlidXRlcyBjb21wdXRlVmlld3BvcnRBdHRyaWJ1dGVzKFZpZXdwb3J0QXJn
+dW1lbnRzIGFyZ3MsIGludCBkZXNrdG9wV2lkdGgsIGludCBkZXZpY2VXaWR0aCwgaW50IGRldmlj
+ZUhlaWdodCwgaW50IGRldmljZURQSSwgSW50U2l6ZSB2aXNpYmxlVmlld3BvcnQpOworVmlld3Bv
+cnRBdHRyaWJ1dGVzIGNvbXB1dGVWaWV3cG9ydEF0dHJpYnV0ZXMoVmlld3BvcnRBcmd1bWVudHMg
+YXJncywgaW50IGRlc2t0b3BXaWR0aCwgaW50IGRldmljZVdpZHRoLCBpbnQgZGV2aWNlSGVpZ2h0
+LCBpbnQgZGV2aWNlRFBJLCBJbnRTaXplIHZpc2libGVWaWV3cG9ydCwgZG91YmxlIGRlZmF1bHRE
+UEkgPSAxNjApOwogCiB2b2lkIHNldFZpZXdwb3J0RmVhdHVyZShjb25zdCBTdHJpbmcmIGtleVN0
+cmluZywgY29uc3QgU3RyaW5nJiB2YWx1ZVN0cmluZywgRG9jdW1lbnQqLCB2b2lkKiBkYXRhKTsK
+IHZvaWQgcmVwb3J0Vmlld3BvcnRXYXJuaW5nKERvY3VtZW50KiwgVmlld3BvcnRFcnJvckNvZGUs
+IGNvbnN0IFN0cmluZyYgcmVwbGFjZW1lbnQxLCBjb25zdCBTdHJpbmcmIHJlcGxhY2VtZW50Mik7
+Ci0tIAoxLjcuMQoK
+</data>        
+
+              <flag name="review"
+                    id="104635"
+                    status="?"
+                    setter="kpiascik@yahoo.com"
+               />
+          </attachment>
+      
+
+    </bug>
+
+</bugzilla>

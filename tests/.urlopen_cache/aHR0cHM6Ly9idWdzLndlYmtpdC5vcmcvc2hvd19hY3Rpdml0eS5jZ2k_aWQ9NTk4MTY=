@@ -1,0 +1,1246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Changes made to bug 59816</title>
+
+
+<link rel="Top" href="https://bugs.webkit.org/">
+
+  
+
+  
+
+
+  
+    <link rel="Show" title="Dependency Tree"
+          href="showdependencytree.cgi?id=59816&amp;hide_resolved=1">
+      <link rel="Show" title="Dependency Graph"
+            href="showdependencygraph.cgi?id=59816">
+
+
+      <link rel="Show" title="Bug Activity"
+            href="show_activity.cgi?id=59816">
+      <link rel="Show" title="Printer-Friendly Version"
+            href="show_bug.cgi?format=multiple&amp;id=59816">
+
+
+    
+
+    
+      <link href="skins/standard/global.css"
+            rel="stylesheet"
+            type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="skins/standard/global.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <!--[if IE]>
+        
+        <link href="skins/standard/IE-fixes.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+        
+            <link href="skins/contrib/Dusk/global.css"
+                  rel="alternate stylesheet"
+                  title="Dusk"
+                  type="text/css">
+        <!--[if IE]>
+          
+          <link href="skins/contrib/Dusk/IE-fixes.css"
+                rel="alternate stylesheet"
+                title="Dusk"
+                type="text/css">
+        <![endif]-->
+
+    
+
+    
+        <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+
+
+
+
+    
+
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="Bugzilla" href="./search_plugin.cgi">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+  </head>
+
+
+
+  <body onload=""
+        class="bugs-webkit-org">
+
+
+
+
+<div id="header">
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>WebKit Bugzilla
+
+      </p>
+
+    </td>
+
+
+</tr>
+</table>
+
+
+    <div id="bug_title">Activity log for bug 59816: [Refactoring] Replace Node's Document pointer with a TreeScope pointer</div>
+
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_top"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=59816&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+
+</div>
+
+<div id="bugzilla-body">
+
+<p><a href="show_bug.cgi?id=59816" title="REOPENED - [Refactoring] Replace Node's Document pointer with a TreeScope pointer">Back to bug 59816</a>
+</p>
+<table border cellpadding="4">
+    <tr>
+      <th>Who</th>
+      <th>When</th>
+      <th>What</th>
+      <th>Removed</th>
+      <th>Added</th>
+    </tr>
+
+      <tr>
+        <td rowspan="1" valign="top">dominicc&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2011-11-15 16:42:48 PST
+        </td>
+            <td>
+              Blocks
+            </td>
+            <td>
+            </td>
+            <td><a href="show_bug.cgi?id=72352" title="NEW - [meta] Shadow DOM stability, flakiness, factoring">72352</a>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">dominicc&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2011-11-20 18:27:16 PST
+        </td>
+            <td>
+              Blocks
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=59802" title="RESOLVED FIXED - [Meta] Implement Shadow Content Plumbing">59802</a></span>
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2011-12-04 22:49:10 PST
+        </td>
+            <td>
+              Summary
+            </td>
+            <td>Replace Node's Document pointer with a TreeScope pointer
+            </td>
+            <td>[Refactoring] Replace Node's Document pointer with a TreeScope pointer
+            </td></tr><tr>
+            <td>
+              AssignedTo
+            </td>
+            <td>webkit-unassigned&#64;lists.webkit.org
+            </td>
+            <td>morrita&#64;google.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-12-04 22:54:33 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=73800" title="RESOLVED FIXED - [Refactoring] Accessing Node::m_document should be minimized.">73800</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-12-08 01:54:07 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=74067" title="RESOLVED FIXED - Unify willMoveToNewOwnerDocument() and didMoveToNewOwnerDocument() for better performance">74067</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-12-26 21:57:47 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=75240" title="RESOLVED FIXED - [Refactoring] Node::setTreeScopeRecursively() doesn't need includeRoot parameter">75240</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-12-26 22:38:19 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=75241" title="RESOLVED INVALID - Node::traverseNextNode() should know about shadow tree">75241</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-12-27 21:08:05 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=75290" title="RESOLVED FIXED - [Refactoring] Migration over TreeScopes should be done by its own class.">75290</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 01:20:33 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121810">
+                Attachment #121810</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit-ews&#64;sed.inf.u-szeged.hu
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 01:40:58 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121810">
+                Attachment #121810</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>commit-queue-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">rolandsteiner&#64;chromium.org
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 01:54:23 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>rolandsteiner&#64;chromium.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">gns&#64;gnome.org
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 02:06:39 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>gns&#64;gnome.org, xan.lopez&#64;gmail.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-01-10 02:52:21 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121810">
+                Attachment #121810</a>
+              Flag
+            </td>
+            <td>review?, commit-queue-
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=121810">
+                Attachment #121810</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 02:52:28 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121818">
+                Attachment #121818</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit-ews&#64;sed.inf.u-szeged.hu
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 03:18:05 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121818">
+                Attachment #121818</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>commit-queue-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 03:53:38 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>webkit.review.bot&#64;gmail.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-01-10 21:03:16 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121818">
+                Attachment #121818</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=121818">
+                Attachment #121818</a>
+              Flag
+            </td>
+            <td>review?, commit-queue-
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-01-10 21:03:23 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121969">
+                Attachment #121969</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">darin&#64;apple.com
+        </td>
+        <td rowspan="1" valign="top">2012-01-11 11:01:33 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121969">
+                Attachment #121969</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">abarth&#64;webkit.org
+        </td>
+        <td rowspan="1" valign="top">2012-01-11 11:04:19 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>abarth&#64;webkit.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-02-12 20:39:47 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=121969">
+                Attachment #121969</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-03-29 04:45:55 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=126707">
+                Attachment #126707</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-03-29 04:47:43 PST
+        </td>
+            <td>
+              Status
+            </td>
+            <td>NEW
+            </td>
+            <td>RESOLVED
+            </td></tr><tr>
+            <td>
+              Resolution
+            </td>
+            <td>
+            </td>
+            <td>WONTFIX
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-13 00:24:13 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=134547">
+                Attachment #134547</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-06-13 00:24:20 PST
+        </td>
+            <td>
+              Status
+            </td>
+            <td>RESOLVED
+            </td>
+            <td>REOPENED
+            </td></tr><tr>
+            <td>
+              Resolution
+            </td>
+            <td>WONTFIX
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-13 00:47:56 PST
+        </td>
+            <td>
+              Blocks
+            </td>
+            <td>
+            </td>
+            <td><a href="show_bug.cgi?id=87034" title="NEW - treeScope() is too slow">87034</a>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-27 01:56:54 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=147249">
+                Attachment #147249</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-27 02:12:28 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=149707">
+                Attachment #149707</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-29 00:46:41 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=149709">
+                Attachment #149709</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-06-29 04:33:59 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150106">
+                Attachment #150106</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-04 21:54:16 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150138">
+                Attachment #150138</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-04 23:14:35 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150872">
+                Attachment #150872</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-04 23:14:42 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150879">
+                Attachment #150879</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-04 23:19:30 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>mifenton&#64;rim.com, rakuco&#64;webkit.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">buildbot&#64;hotmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-04 23:45:54 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150879">
+                Attachment #150879</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>commit-queue-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">philn&#64;igalia.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-05 01:06:36 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>philn&#64;igalia.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-09 19:08:12 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=150879">
+                Attachment #150879</a>
+              Flag
+            </td>
+            <td>review?, commit-queue-
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=150879">
+                Attachment #150879</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-09 19:08:19 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151386">
+                Attachment #151386</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">simon.fraser&#64;apple.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 18:12:48 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>barraclough&#64;apple.com, ggaren&#64;apple.com, simon.fraser&#64;apple.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">simon.fraser&#64;apple.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 18:14:26 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151386">
+                Attachment #151386</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>review-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-10 20:31:08 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151386">
+                Attachment #151386</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=151386">
+                Attachment #151386</a>
+              Flag
+            </td>
+            <td>review-
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 20:31:15 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151583">
+                Attachment #151583</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit-ews&#64;sed.inf.u-szeged.hu
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 20:53:54 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151583">
+                Attachment #151583</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>commit-queue-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-10 21:00:12 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151583">
+                Attachment #151583</a>
+              Flag
+            </td>
+            <td>review?, commit-queue-
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=151583">
+                Attachment #151583</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 21:00:20 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151585">
+                Attachment #151585</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-10 21:52:16 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151585">
+                Attachment #151585</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=151585">
+                Attachment #151585</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-10 21:52:24 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151593">
+                Attachment #151593</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-17 01:26:34 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=151593">
+                Attachment #151593</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=151593">
+                Attachment #151593</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-17 01:26:42 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=152715">
+                Attachment #152715</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-17 03:57:55 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=152715">
+                Attachment #152715</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=152715">
+                Attachment #152715</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-17 03:58:04 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=152727">
+                Attachment #152727</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">rniwa&#64;webkit.org
+        </td>
+        <td rowspan="1" valign="top">2012-07-18 17:50:50 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=152727">
+                Attachment #152727</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>review+
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-18 17:55:08 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>darin&#64;apple.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-19 22:10:34 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=152727">
+                Attachment #152727</a>
+              Flag
+            </td>
+            <td>review+
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=152727">
+                Attachment #152727</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-19 22:10:44 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=153407">
+                Attachment #153407</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>commit-queue+
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-19 23:34:07 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=153407">
+                Attachment #153407</a>
+              Flag
+            </td>
+            <td>commit-queue+
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-19 23:34:16 PST
+        </td>
+            <td>
+              Status
+            </td>
+            <td>REOPENED
+            </td>
+            <td>RESOLVED
+            </td></tr><tr>
+            <td>
+              Resolution
+            </td>
+            <td>
+            </td>
+            <td>FIXED
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-23 17:38:57 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=92048" title="RESOLVED INVALID - REGRESSION(r123184): pagecycler regression (Requested by morrita on #webkit).">92048</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="2" valign="top">2012-07-23 17:39:09 PST
+        </td>
+            <td>
+              Status
+            </td>
+            <td>RESOLVED
+            </td>
+            <td>REOPENED
+            </td></tr><tr>
+            <td>
+              Resolution
+            </td>
+            <td>FIXED
+            </td>
+            <td>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">webkit.review.bot&#64;gmail.com
+        </td>
+        <td rowspan="1" valign="top">2012-07-23 17:43:02 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=92049" title="RESOLVED FIXED - REGRESSION(r123184): pagecycler regression (Requested by morrita on #webkit).">92049</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-08-08 02:28:20 PST
+        </td>
+            <td>
+              Blocks
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=90913" title="RESOLVED FIXED - Regression(121518) TextFieldDecorationElement formatting is broken">90913</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-08-08 04:06:09 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=153407">
+                Attachment #153407</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">morrita&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-08-08 04:12:03 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=157171">
+                Attachment #157171</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+  </table>
+
+  <p><a href="show_bug.cgi?id=59816" title="REOPENED - [Refactoring] Replace Node's Document pointer with a TreeScope pointer">Back to bug 59816</a>
+  </p>
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions">
+    <div class="label">Actions: </div><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_bottom"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=59816&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+  </li>
+
+  
+    
+
+  
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+<script defer src="/committers-autocomplete.js"></script>
+</body>
+</html>

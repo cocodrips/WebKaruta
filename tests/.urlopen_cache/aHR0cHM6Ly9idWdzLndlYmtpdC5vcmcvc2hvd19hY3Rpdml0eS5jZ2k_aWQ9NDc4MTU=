@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Changes made to bug 47815</title>
+
+
+<link rel="Top" href="https://bugs.webkit.org/">
+
+  
+
+  
+
+
+  
+    <link rel="Show" title="Dependency Tree"
+          href="showdependencytree.cgi?id=47815&amp;hide_resolved=1">
+      <link rel="Show" title="Dependency Graph"
+            href="showdependencygraph.cgi?id=47815">
+
+
+      <link rel="Show" title="Bug Activity"
+            href="show_activity.cgi?id=47815">
+      <link rel="Show" title="Printer-Friendly Version"
+            href="show_bug.cgi?format=multiple&amp;id=47815">
+
+
+    
+
+    
+      <link href="skins/standard/global.css"
+            rel="stylesheet"
+            type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="skins/standard/global.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <!--[if IE]>
+        
+        <link href="skins/standard/IE-fixes.css"
+              rel="stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+        
+            <link href="skins/contrib/Dusk/global.css"
+                  rel="alternate stylesheet"
+                  title="Dusk"
+                  type="text/css">
+        <!--[if IE]>
+          
+          <link href="skins/contrib/Dusk/IE-fixes.css"
+                rel="alternate stylesheet"
+                title="Dusk"
+                type="text/css">
+        <![endif]-->
+
+    
+
+    
+        <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+
+
+
+
+    
+
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="Bugzilla" href="./search_plugin.cgi">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+  </head>
+
+
+
+  <body onload=""
+        class="bugs-webkit-org">
+
+
+
+
+<div id="header">
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>WebKit Bugzilla
+
+      </p>
+
+    </td>
+
+
+</tr>
+</table>
+
+
+    <div id="bug_title">Activity log for bug 47815: First-letter style is applied to the letters that were once first but not any more due to style change</div>
+
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_top"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=47815&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+
+</div>
+
+<div id="bugzilla-body">
+
+<p><a href="show_bug.cgi?id=47815" title="NEW - First-letter style is applied to the letters that were once first but not any more due to style change">Back to bug 47815</a>
+</p>
+<table border cellpadding="4">
+    <tr>
+      <th>Who</th>
+      <th>When</th>
+      <th>What</th>
+      <th>Removed</th>
+      <th>Added</th>
+    </tr>
+
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-18 05:35:07 PST
+        </td>
+            <td>
+              Summary
+            </td>
+            <td>First letter style is applied for the letters that were once first but not any more due to style change
+            </td>
+            <td>First letter style is applied to the letters that were once first but not any more due to style change
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-28 01:04:41 PST
+        </td>
+            <td>
+              Summary
+            </td>
+            <td>First letter style is applied to the letters that were once first but not any more due to style change
+            </td>
+            <td>First-letter style is applied to the letters that were once first but not any more due to style change
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-28 02:25:49 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72162">
+                Attachment #72162</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-28 02:27:18 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>hamaji&#64;chromium.org, hayato&#64;chromium.org, hyatt&#64;apple.com, mitz&#64;webkit.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2010-10-29 00:00:46 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72162">
+                Attachment #72162</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=72162">
+                Attachment #72162</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-29 00:00:53 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72297">
+                Attachment #72297</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2010-10-29 02:13:19 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72297">
+                Attachment #72297</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=72297">
+                Attachment #72297</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2010-10-29 02:13:24 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72301">
+                Attachment #72301</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-01-05 01:05:28 PST
+        </td>
+            <td>
+              AssignedTo
+            </td>
+            <td>webkit-unassigned&#64;lists.webkit.org
+            </td>
+            <td>yuzo&#64;google.com
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2011-01-10 22:45:32 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=72301">
+                Attachment #72301</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=72301">
+                Attachment #72301</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-01-10 22:45:37 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=78496">
+                Attachment #78496</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2011-01-11 18:13:44 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=78496">
+                Attachment #78496</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=78496">
+                Attachment #78496</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-01-11 18:13:49 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=78635">
+                Attachment #78635</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">eric&#64;webkit.org
+        </td>
+        <td rowspan="1" valign="top">2011-05-23 11:01:24 PST
+        </td>
+            <td>
+              CC
+            </td>
+            <td>
+            </td>
+            <td>eric&#64;webkit.org, rniwa&#64;webkit.org
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">eric&#64;webkit.org
+        </td>
+        <td rowspan="1" valign="top">2011-05-23 11:09:12 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=78635">
+                Attachment #78635</a>
+              Flag
+            </td>
+            <td>review?
+            </td>
+            <td>review-
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-05-24 02:42:17 PST
+        </td>
+            <td>
+              Depends on
+            </td>
+            <td>
+            </td>
+            <td><span class="bz_closed"><a href="show_bug.cgi?id=61352" title="RESOLVED FIXED - Refactor RenderView::{enable,disable}LayoutState call sites to use RIIA">61352</a></span>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="2" valign="top">2011-05-25 23:52:15 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=78635">
+                Attachment #78635</a>
+              Flag
+            </td>
+            <td>review-
+            </td>
+            <td>
+            </td></tr><tr>
+            <td>
+                <a href="attachment.cgi?id=78635">
+                Attachment #78635</a>
+              is obsolete
+            </td>
+            <td>0
+            </td>
+            <td>1
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2011-05-25 23:52:22 PST
+        </td>
+            <td>
+                <a href="attachment.cgi?id=94924">
+                Attachment #94924</a>
+              Flag
+            </td>
+            <td>
+            </td>
+            <td>review?
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="1" valign="top">yuzo&#64;google.com
+        </td>
+        <td rowspan="1" valign="top">2012-04-02 09:55:33 PST
+        </td>
+            <td>
+              AssignedTo
+            </td>
+            <td>yuzo&#64;google.com
+            </td>
+            <td>webkit-unassigned&#64;lists.webkit.org
+            </td>
+      </tr>
+  </table>
+
+  <p><a href="show_bug.cgi?id=47815" title="NEW - First-letter style is applied to the letters that were once first but not any more due to style change">Back to bug 47815</a>
+  </p>
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions">
+    <div class="label">Actions: </div><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_bottom"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li>
+      <span class="separator">| </span>
+        <a href="request.cgi">Requests</a></li>
+
+
+      <li><span class="separator">| </span><a href="createaccount.cgi">New&nbsp;Account</a></li>
+
+
+      
+
+
+
+      
+
+        
+      <li><span class="separator">| </span><a href="https://bugs.webkit.org/show_activity.cgi?id=47815&amp;GoAheadAndLogIn=1">Log&nbsp;In</a></li>
+</ul>
+  </li>
+
+  
+    
+
+  
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+<script defer src="/committers-autocomplete.js"></script>
+</body>
+</html>

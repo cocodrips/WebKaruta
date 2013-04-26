@@ -1,0 +1,20 @@
+
+
+= Allow user to create/edit plates
+
+ * UI for creating plates
+ * UI for editing paltes (add/remove/rename)
+ * Show the summary of each bugs on the list
+   * Summary / Status / Review
+   
+= Update the bug status automatically
+
+ * Crawl and update the state
+
+= Import bugs from webcomponents-bugziila
+
+------
+
+Future ideas:
+
+ * Create a "burn chart" for each list

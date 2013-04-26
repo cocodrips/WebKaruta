@@ -1,0 +1,21 @@
+#yomifuda{
+    vertical-align:middle;
+}
+
+#torifuda{
+    width:40%;
+    vertical-align:middle;
+
+}
+
+.branch{
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.node{
+    padding: 3px;
+}

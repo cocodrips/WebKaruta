@@ -6,18 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function(){
-    <!--長さの平均-->
-    $(".branch").each(function(){
-        var char_length=0;
-        var max_char_length=0;
-        $(this).children(".node").forEach(function(){
-            var len = $(this).text().length();
-            char_count +=  len;
-            if(max_char_length < len) max_char_length = len;
-        });
-var node_count = $(this).children(".node").length;
-var width = Math.max((char_length/node_count), max_char_length);
-$(this).css("width", width*15);
+    var branches = $("#torifuda .branch").each(function(){
+        node_num = $(this).children().length;
+        $(this).css('width',Math.ceil(Math.sqrt(node_num))*16+'px');
+    });
 
-});
+    $("#yomifuda .branch").each(function(){
+        var allLength = 0;
+        var longest = 0;
+        $(this).children(".node_box").each(function(){
+//        var len = $(this).html().replace(/^\s+/, "").length;
+            var len = $(this).width();
+            allLength += len;
+            longest = Math.max(longest, len);
+        });
+        var width = Math.max(allLength/2, longest);
+        console.log(width+" "+allLength+":"+longest);
+        $(this).css('width',width+3+"px");
+    });
 });
