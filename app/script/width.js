@@ -69,13 +69,21 @@ var fontSize = function(priority){
     return 12;
 }
 
+var CalcColor = function(val){
+    val = Math.min(Math.round(val * 2.5), 255);
+    var y = Math.max(126 - val, 0);
+    return "rgb("+val+","+y+","+(255-(val))+")";
+}
+
 var coloringPages = function(el){
     var keyword = el.attr('data-keyword');
     var keywordData = $('#yomifuda .branch .node_box').attr('data-keyword');
     for(page in jsonData.pages){
-        if(parseFloat(jsonData.pages[page].keyword[keywordData]) > 0){
-            $("#"+jsonData.pages[page].page).css('background-color','red');
+        var priority = parseFloat(jsonData.pages[page].keyword[keywordData]);
+        if(priority > 0){
+            var color = CalcColor(priority);
+            console.log(color);
+            $("#"+jsonData.pages[page].page).css('background-color',color);
         }
     }
-
 }
