@@ -1,11 +1,13 @@
 #yomifuda{
     width: 100%;
     vertical-align:middle;
+    z-index: -1;
 }
 
 #torifuda{
     width: 100%;
     vertical-align:middle;
+    z-index: -1;
 
 }
 
@@ -23,6 +25,7 @@
     padding: 3px;
     margin: 3px;
     display: inline-block;
+    z-index: 1;
 }
 
 .node_box{
@@ -30,6 +33,7 @@
     padding: 1px;
     font-weight: bold;
     display: inline-block;
+    z-index: 1;
 }
 
 .node{
@@ -68,8 +72,6 @@
     75% {-webkit-transform: rotate(610deg);background-color: #adff2f;}
     100% {-webkit-transform: rotate(720deg);background-color: #333333;}
 
-
-
 }
 
 @-webkit-keyframes nodeAnimEnd{
@@ -81,14 +83,15 @@
 .arrow_box {
     display: none;
     position: relative;
-    background: orange;
-    border: 1px solid orange;
+    background: rgba(255, 165, 0, 0.81);
+    border: 1px solid rgba(255, 165, 0, 0.81);
     width: 100px;
     color: white;
     border-radius: 3px;
     padding: 3px;
     left: -50px;
     top: -50px;
+    z-index: 15;
 }
 .arrow_box:after, .arrow_box:before {
     top: 100%;
@@ -102,14 +105,14 @@
 
 .arrow_box:after {
     border-color: rgba(0, 0, 0, 0);
-    border-top-color: orange;
+    border-top-color: rgba(255, 165, 0, 0.81);
     border-width: 10px;
     left: 50%;
     margin-left: -10px;
 }
 .arrow_box:before {
     border-color: rgba(0, 0, 0, 0);
-    border-top-color: orange;
+    border-top-color: rgba(255, 165, 0, 0.81);
     border-width: 11px;
     left: 50%;
     margin-left: -11px;

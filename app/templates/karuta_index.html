@@ -41,7 +41,7 @@
               <div class="branch">
                 {% for d in data.keywords %}
                 {%if d.cluster == i %}
-                  <div class="node_box" data-priority="{{d.priority}}">
+                  <div class="node_box" data-keyword="{{d.keyword}}" data-priority="{{d.priority}}">
                     {{d.keyword}}
                   </div>
                 {% endif %}
@@ -58,8 +58,8 @@
             <div class="branch">
               {% for d in data.pages %}
                 {% if d.cluster == i %}
-                    <div class="node_box">
-                      <div class="node"></div>
+                    <div class="node_box"  data-page="{{d.page}}">
+                      <div class="node" id="{{d.page}}"></div>
                       <div class="arrow_box">{{d.page}}</div>
                     </div>
                 {% endif %}
@@ -73,16 +73,7 @@
   </div>
   </div>
 
-  <script type="text/javascript">
-     $(function(){
-       $("#torifuda .node").hover(function(){
-         $(this).parent().children(".arrow_box").show();
-       },function(){
-         $(this).parent().children(".arrow_box").hide();
-       });
-
-     });
-  </script>
+  <div id="static_data" data-json="{{data}}"></div>
 
   <footer>
       もじ

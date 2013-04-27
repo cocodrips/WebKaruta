@@ -1,20 +1,39 @@
 /**
  * Created with IntelliJ IDEA.
- * User: Chiichan
+ * User: Chii
  * Date: 13/04/07
  * Time: 1:03
  * To change this template use File | Settings | File Templates.
  */
 $(function(){
+
+//キーワード側
+    $('#yomifuda .branch').each(function(){
+        calcFontSize($(this));
+        calcWidth($(this));
+    });
+
+    $('#yomifuda .branch .node_box').bind('click', function(){
+        coloringPages($(this));
+    });
+
+//ページ側
     var branches = $('#torifuda .branch').each(function(){
         node_num = $(this).children().length;
         $(this).css('width',Math.ceil(Math.sqrt(node_num))*16+'px');
     });
 
-    $('#yomifuda .branch').each(function(){
-        calcFontSize($(this));
-        calcWidth($(this));
+    $("#torifuda .node").hover(function(){
+        $(this).parent().children(".arrow_box").show();
+    },function(){
+        $(this).parent().children(".arrow_box").hide();
     });
+
+//static
+    var data = $('#static_data').attr("data-json");
+    data = data.replace(/u'/g, "'");    //parseできる形に変更
+    data = data.replace(/'/g, '"');
+    jsonData = JSON.parse(data);
 
 });
 
@@ -29,7 +48,8 @@ var calcWidth = function(el){
     });
     var width = Math.max(allLength/2, longest);
 //    console.log(width+" "+allLength+":"+longest);
-    el.css('width',width+padding+"px");
+    el.css('min-width',longest+"px");
+    el.css('max-width',width+padding+"px");
 }
 
 var calcFontSize = function(el){
@@ -42,9 +62,20 @@ var calcFontSize = function(el){
 
 //あとでもう少し柔軟な感じにする
 var fontSize = function(priority){
-    if(priority > 500)  return 24;
+    if(priority > 1000)  return 24;
     if(priority > 100)  return 20;
-    if(priority > 20)   return 18;
-    if(priority > 1)    return 16;
-    return 14;
+    if(priority > 20)   return 16;
+    if(priority > 1)    return 14;
+    return 12;
+}
+
+var coloringPages = function(el){
+    var keyword = el.attr('data-keyword');
+    var keywordData = $('#yomifuda .branch .node_box').attr('data-keyword');
+    for(page in jsonData.pages){
+        if(parseFloat(jsonData.pages[page].keyword[keywordData]) > 0){
+            $("#"+jsonData.pages[page].page).css('background-color','red');
+        }
+    }
+
 }
