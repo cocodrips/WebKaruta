@@ -5,6 +5,9 @@
  * Time: 1:03
  * To change this template use File | Settings | File Templates.
  */
+
+default_icon_color = "#333333";
+
 $(function(){
 
 //キーワード側
@@ -14,12 +17,13 @@ $(function(){
     });
 
     $('#yomifuda .branch .node_box').bind('click', function(){
+        console.log(this);
         coloringPages($(this));
     });
 
 //ページ側
     var branches = $('#torifuda .branch').each(function(){
-        node_num = $(this).children().length;
+        var node_num = $(this).children().length;
         $(this).css('width',Math.ceil(Math.sqrt(node_num))*16+'px');
     });
 
@@ -27,6 +31,11 @@ $(function(){
         $(this).parent().children(".arrow_box").show();
     },function(){
         $(this).parent().children(".arrow_box").hide();
+    });
+
+    $('#torifuda .node_box').bind('click', function(){
+        console.log(this);
+        coloringKeywords($(this));
     });
 
 //static
@@ -75,15 +84,54 @@ var CalcColor = function(val){
     return "rgb("+val+","+y+","+(255-(val))+")";
 }
 
-var coloringPages = function(el){
-    var keyword = el.attr('data-keyword');
-    var keywordData = $('#yomifuda .branch .node_box').attr('data-keyword');
+//Better:Only one method
+var coloringKeywords = function(el){
+    resetKeywordsColor();
+    var page_name = el.attr('data-page');
+    console.log(page_name);
     for(page in jsonData.pages){
-        var priority = parseFloat(jsonData.pages[page].keyword[keywordData]);
+//        ここもう少しどうにかする
+        var pageData = jsonData.pages[page];
+        if(pageData.page == page_name){
+            for(key in pageData.keyword){
+                var priority = pageData.keyword[key];
+                if(priority > 0){
+                    var color = CalcColor(priority);
+                    $("#"+key).css('color',color);
+                }
+            }
+        }
+    }
+}
+
+var resetKeywordsColor = function(){
+    $("#yomifuda .node_box").each(function(){
+        $(this).css('color',default_icon_color);
+    });
+}
+
+var coloringPages = function(el){
+    console.log("click keywords");
+    resetPagesColor();
+    var keyword = el.attr('data-keyword');
+    console.log(keyword);
+    for(page in jsonData.pages){
+        var priority = parseFloat(jsonData.pages[page].keyword[keyword]);
         if(priority > 0){
             var color = CalcColor(priority);
-            console.log(color);
+//            console.log(color);
             $("#"+jsonData.pages[page].page).css('background-color',color);
         }
     }
+}
+
+var resetPagesColor = function(){
+    $("#torifuda .node").each(function(){
+        $(this).css('background-color',default_icon_color);
+    });
+}
+
+var colorResetBtn = function(){
+    resetKeywordsColor();
+    resetPagesColor();
 }

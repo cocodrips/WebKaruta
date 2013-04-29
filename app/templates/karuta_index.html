@@ -24,6 +24,7 @@
           <div class="input-append" style="text-align:left;">
             <input class="span5" id="appendedInputButton" size="16" type="text" name="word" placeholder="Word">
             <button class="btn" type="submit">Search</button>
+            <button class="btn" type="button"  onclick="colorResetBtn()">Reset Color</button>
           </div>
         </form>
 	    <h2>{{ word }}</h2>
@@ -33,7 +34,7 @@
     </div>
 
     <div class="row-fluid">
-      <div class="span5">
+      <div class="span6">
         <div class="parent_branch">
           <div  id="yomifuda">
             {% for i in range(0,data.keywordsData[0].clusterMax)%}
@@ -41,7 +42,7 @@
               <div class="branch">
                 {% for d in data.keywords %}
                 {%if d.cluster == i %}
-                  <div class="node_box" data-keyword="{{d.keyword}}" data-priority="{{d.priority}}">
+                  <div class="node_box" id="{{d.keyword}}" data-keyword="{{d.keyword}}" data-priority="{{d.priority}}">
                     {{d.keyword}}
                   </div>
                 {% endif %}

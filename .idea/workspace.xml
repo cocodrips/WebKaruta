@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d3b5d7-1fbf-4faa-b054-78627bd8b024" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/karuta_index.html" afterPath="$PROJECT_DIR$/app/templates/karuta_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/matrixEn.json" afterPath="$PROJECT_DIR$/app/static/matrixEn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/parts.css" afterPath="$PROJECT_DIR$/app/css/parts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/width.js" afterPath="$PROJECT_DIR$/app/script/width.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebKaruta.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367024870159" ignored="false" />
+    <file path="/Dummy.txt" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367195986896" ignored="false" />
     <file path="/a.java" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1363423760289" ignored="false" />
     <file path="/a.html" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1365304408809" ignored="false" />
     <file path="/a.js" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1363423774632" ignored="false" />
@@ -18,12 +21,12 @@
     <file path="/analyze.py" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1364281303322" ignored="false" />
     <file path="/web.py" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1366853945888" ignored="false" />
     <file path="/__init__.py" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1366761345990" ignored="false" />
-    <file path="/karuta_index.html" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367024557186" ignored="false" />
+    <file path="/karuta_index.html" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367183517854" ignored="false" />
     <file path="/test_analyze.py" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1364281236635" ignored="false" />
     <file path="/fragment.js2" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1363504138846" ignored="false" />
-    <file path="/parts.css" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367010720263" ignored="false" />
+    <file path="/parts.css" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367183683518" ignored="false" />
     <file path="/all.css" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1365303515164" ignored="false" />
-    <file path="/width.js" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367026557033" ignored="false" />
+    <file path="/width.js" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367183434657" ignored="false" />
     <file path="/app.yaml" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367006084437" ignored="false" />
     <file path="/main.css" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1366999584094" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,10 +87,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="karuta_index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="karuta_index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/karuta_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="55" selection-start="2284" selection-end="2284" vertical-scroll-proportion="-9.285714">
+            <state line="74" column="8" selection-start="2664" selection-end="2664" vertical-scroll-proportion="1.4325744">
               <folding />
             </state>
           </provider>
@@ -102,28 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="karuta.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bp/karuta.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="37" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="width.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="width.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/script/width.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="24" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.44444445">
+            <state line="8" column="29" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,7 +126,7 @@
       <file leaf-file-name="parts.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/parts.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="46" selection-start="2327" selection-end="2351" vertical-scroll-proportion="0.0">
+            <state line="14" column="15" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,17 +161,17 @@
         <option value="$PROJECT_DIR$/app/web.py" />
         <option value="$PROJECT_DIR$/app/css/main.css" />
         <option value="$PROJECT_DIR$/app/app.yaml" />
+        <option value="$PROJECT_DIR$/app/script/width.js" />
         <option value="$PROJECT_DIR$/app/css/parts.css" />
         <option value="$PROJECT_DIR$/app/templates/karuta_index.html" />
-        <option value="$PROJECT_DIR$/app/script/width.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
+    <option name="x" value="-51" />
     <option name="y" value="800" />
-    <option name="width" value="1280" />
+    <option name="width" value="1366" />
     <option name="height" value="764" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -249,8 +234,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,21 +318,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="108" />
-    <property name="project.structure.proportion" value="0.0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="108" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="108" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="150" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1157" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1157" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1157" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="150" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="132" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -535,11 +520,15 @@
       <created>1367024872655</created>
       <updated>1367024872655</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#11 ページ カラーリングの色をpriority値に比例させる">
+      <created>1367026690272</created>
+      <updated>1367026690272</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="800" width="1280" height="764" extended-state="0" />
+    <frame x="-51" y="800" width="1366" height="764" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -553,17 +542,17 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23941368" sideWeight="0.97232705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13926941" sideWeight="0.93236715" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -606,7 +595,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="close #8 キーワード　-&gt; ページ　のカラーリング" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 ページ カラーリングの色をpriority値に比例させる" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -625,6 +614,7 @@
     <MESSAGE value="ファイルを管理対象に" />
     <MESSAGE value="close #10 文字の大きさをPriority値に" />
     <MESSAGE value="close #8 キーワード　-&gt; ページ　のカラーリング" />
+    <MESSAGE value="#11 ページ カラーリングの色をpriority値に比例させる" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,18 +673,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="14" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/parts.css">
+    <entry file="file://$PROJECT_DIR$/app/bp/karuta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="46" selection-start="2327" selection-end="2351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="61" column="37" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/web.py">
@@ -704,30 +690,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bp/karuta.py">
+    <entry file="file://$PROJECT_DIR$/app/script/width.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="37" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+        <state line="8" column="29" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/parts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="15" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/karuta_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="55" selection-start="2284" selection-end="2284" vertical-scroll-proportion="-9.285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/width.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="24" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.44444445">
+        <state line="74" column="8" selection-start="2664" selection-end="2664" vertical-scroll-proportion="1.4325744">
           <folding />
         </state>
       </provider>
