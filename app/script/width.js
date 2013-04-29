@@ -81,7 +81,7 @@ var fontSize = function(priority){
 var CalcColor = function(val){
     val = Math.min(Math.round(val * 2.5), 255);
     var h = Math.max(240 - val, 0);
-    return "hsl("+h+",70%,60%)";
+    return "hsl("+h+",95%,50%)";
 
 }
 

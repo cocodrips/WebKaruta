@@ -7,7 +7,7 @@
     </list>
     <ignored path="WebKaruta.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367197250418" ignored="false" />
+    <file path="/Dummy.txt" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1367198446954" ignored="false" />
     <file path="/a.java" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1363423760289" ignored="false" />
     <file path="/a.html" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1365304408809" ignored="false" />
     <file path="/a.js" changelist="64d3b5d7-1fbf-4faa-b054-78627bd8b024" time="1363423774632" ignored="false" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="width.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/script/width.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="23" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.7385621">
+            <state line="83" column="24" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.7385621">
               <folding />
             </state>
           </provider>
@@ -525,7 +525,11 @@
       <created>1367196237245</created>
       <updated>1367196237245</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#11 #12 close Priority値で色が決まる">
+      <created>1367198449696</created>
+      <updated>1367198449696</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,6 +547,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -553,7 +558,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -596,7 +600,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="#9 close ページ -&gt; キーワード　のカラーリング" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 #12 close Priority値で色が決まる" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -617,6 +621,7 @@
     <MESSAGE value="close #8 キーワード　-&gt; ページ　のカラーリング" />
     <MESSAGE value="#11 ページ カラーリングの色をpriority値に比例させる" />
     <MESSAGE value="#9 close ページ -&gt; キーワード　のカラーリング" />
+    <MESSAGE value="#11 #12 close Priority値で色が決まる" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/script/width.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="23" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.7385621">
+        <state line="83" column="24" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.7385621">
           <folding />
         </state>
       </provider>
