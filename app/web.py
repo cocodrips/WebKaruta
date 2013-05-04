@@ -7,6 +7,7 @@ sys.path.append("third_party/six-1.1.0/")
 sys.path.append("third_party/beautifulsoup4-4.1.1/")
 
 import flask as f
+from flask import jsonify
 import bp
 
 
@@ -46,6 +47,16 @@ def plate(word):
 @app.route('/k', methods=['POST', 'GET'])
 def k():
 	return "k"
+
+@app.route('/d3', methods=['POST', 'GET'])
+def d3():
+    data = bp.Karuta.json_data()
+    return f.render_template("test.html", data=data)
+
+@app.route('/treemap', methods=['POST', 'GET'])
+def treemap():
+#    data = bp.Karuta.json_data()
+    return f.render_template("treemap.html")
 
 
 

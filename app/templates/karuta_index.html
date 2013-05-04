@@ -12,11 +12,18 @@
       <script src="/script/width.js"></script>
       <link href="/css/parts.css" rel="stylesheet">
     <link href="/css/all.css" rel="stylesheet">
-
     <script src="/script/lib/d3/d3.js"></script>
     <script src="/script/d3.layout.cloud.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/script/treemap.js"></script>
+
   </head>
   <body>
+
+  <script type="text/javascript">
+    d3.select("body").append("p").text("新しいパラグラフ！");
+  </script>
+
   <div class="container">
     <div class="row-fluid">
       <div class="span5">
@@ -72,6 +79,17 @@
       </div>
     </div>
   </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <div id="treemap"></div>
+
+      </div>
+      <div class="span6"></div>
+    </div>
   </div>
 
   <div id="static_data" data-json="{{data}}"></div>

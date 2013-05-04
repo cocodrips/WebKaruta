@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-default_icon_color = "#333333";
+default_icon_color = "#999999";
 
 $(function(){
 
@@ -78,12 +78,16 @@ var fontSize = function(priority){
     return 12;
 }
 
+
 var CalcColor = function(val){
     val = Math.min(Math.round(val * 2.5), 255);
     var h = Math.max(240 - val, 0);
     return "hsl("+h+",95%,50%)";
 
 }
+
+
+/*--------------------Keyword-------------------------------*/
 
 //Better:Only one method
 var coloringKeywords = function(el){
@@ -105,11 +109,19 @@ var coloringKeywords = function(el){
     }
 }
 
+/*
+ *Reset keyword's color
+ */
+
 var resetKeywordsColor = function(){
     $("#yomifuda .node_box").each(function(){
         $(this).css('color',default_icon_color);
     });
 }
+
+/*
+ *Color page
+ */
 
 var coloringPages = function(el){
     console.log("click keywords");
@@ -126,12 +138,20 @@ var coloringPages = function(el){
     }
 }
 
+/*
+ *Reset page's coloring
+ */
+
 var resetPagesColor = function(){
     $("#torifuda .node").each(function(){
         $(this).css('background-color',default_icon_color);
     });
 }
 
+
+/*
+ *Reset All Colorings
+ */
 var colorResetBtn = function(){
     resetKeywordsColor();
     resetPagesColor();
