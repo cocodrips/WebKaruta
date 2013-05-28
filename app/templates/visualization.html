@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <title>--</title>
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="ここ説明" />
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="/script/jquery-1.9.1.min.js"></script>
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="/bootstrap/js/bootstrap.js"></script>
+  <!--<script src="/script/width.js"></script>-->
+  <link href="/css/parts.css" rel="stylesheet">
+  <link href="/css/all.css" rel="stylesheet">
+  <script src="/script/lib/d3/d3.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="/script/d3.layout.cloud.js"></script>
+  <!--<script src="/script/treemap.js"></script>-->
+  <!--<script src="/script/wordle.js"></script>-->
+
+
+</head>
+<body>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <form action="vis" method="POST" style="margin: 10px;">
+        <div class="input-append " style="text-align:left;">
+          <input class="span2" id="appendedInputButton" size="16" type="text" name="word" placeholder="Word">
+          <button class="btn" type="submit">Search</button>
+          クエリの数
+          <select class="span2" name="query_num">
+            <option>3</option>
+            <option>5</option>
+            <option>10</option>
+          </select>
+        </div>
+      </form>
+      <h2>{{ word }}</h2>
+      {{ sample_text }}
+      {{ array }}
+
+
+      <h3>Titles</h3>
+      {% for title in titles %}
+      <p>
+        {{title}}
+      </p>
+      {% endfor %}
+
+      <h3>Matching</h3>
+      {{matching}}
+
+      <h3>TOP Keyword</h3>
+      {% if keyword != "" %}
+      {% for i in range(0,10) %}
+        {{i}} : {{keyword[i][0]}} <br>
+      {% endfor %}
+      {% endif %}
+
+      <h3>Links</h3>
+      {% for data in links %}
+      <p>
+        <a href="{{data.url}}">{{data.url}}</a>
+        <br>
+        {% for url in data.childUrl %}
+        {{url}}<br>
+        {% endfor %}
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+
+</body>
+</html>

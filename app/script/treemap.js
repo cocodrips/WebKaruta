@@ -28,6 +28,7 @@ $(function(){
 
     d3.json("/static/flare.json", function(data) {
         node = root = data;
+        var count = 0;
 
         var nodes = treemap.nodes(root)
             .filter(function(d) { return !d.children; });
@@ -51,6 +52,18 @@ $(function(){
             .attr("text-anchor", "middle")
             .text(function(d) { return d.name; })
             .style("opacity", function(d) { d.w = this.getComputedTextLength(); return d.dx > d.w ? 1 : 0; });
+
+        var id_name = function(d) { return d.parent.name;};
+        var allRect = cell.selectAll("rect")
+            .append("div")
+            .text("Hello")
+            .attr("id", id_name)
+            .attr("class", "branches")
+            .style("width", function(d) { return d.dx * extend - 1; })
+            .style("height", function(d) { return d.dy - 1; })
+            .style("background-color", "black");
+
+
 
         d3.select(window).on("click", function() { zoom(root); });
 

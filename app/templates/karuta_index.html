@@ -13,21 +13,18 @@
       <link href="/css/parts.css" rel="stylesheet">
     <link href="/css/all.css" rel="stylesheet">
     <script src="/script/lib/d3/d3.js"></script>
-    <script src="/script/d3.layout.cloud.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/script/d3.layout.cloud.js"></script>
     <script src="/script/treemap.js"></script>
+    <script src="/script/wordle.js"></script>
+
 
   </head>
   <body>
-
-  <script type="text/javascript">
-    d3.select("body").append("p").text("新しいパラグラフ！");
-  </script>
-
   <div class="container">
     <div class="row-fluid">
       <div class="span5">
-        <form action="p" method="POST" style="margin: 10px;">
+        <form action="vis" method="POST" style="margin: 10px;">
           <div class="input-append" style="text-align:left;">
             <input class="span5" id="appendedInputButton" size="16" type="text" name="word" placeholder="Word">
             <button class="btn" type="submit">Search</button>
@@ -37,6 +34,21 @@
 	    <h2>{{ word }}</h2>
           {{ sample_text }}
           {{ array }}
+      {% for title in titles %}
+        <p>
+          {{title}}
+        </p>
+      {% endfor %}
+
+      {% for data in links %}
+        <p>
+          <a href="{{data.url}}">{{data.url}}</a>
+        <br>
+        {% for url in data.childUrl %}
+          {{url}}<br>
+        {% endfor %}
+        </p>
+      {% endfor %}
       </div>
     </div>
 
@@ -93,9 +105,40 @@
   </div>
 
   <div id="static_data" data-json="{{data}}"></div>
+  <!--<script type="text/javascript">-->
+    <!--var moji =  "#branch1";-->
+    <!--var canvas = d3.select(moji)-->
+            <!--.append("svg")-->
+            <!--.attr("width", 200)-->
+            <!--.attr("height", 200);-->
 
-  <footer>
-      もじ
-  </footer>
+    <!--canvas.attr("transform", "translate(0,0)")-->
+            <!--.selectAll("text")-->
+            <!--.data("a")-->
+            <!--.enter().append("text")-->
+            <!--.style("font-size", "200px")-->
+            <!--.style("font-family", "Impact")-->
+            <!--.attr("fill", "red")-->
+            <!--.attr("text-anchor", "middle")-->
+            <!--.text("aaaaaaaaaaaaaa");-->
+  <!--</script>-->
+  <!--<footer>-->
+      <!--もじ-->
+  <!--</footer>-->
+
+  <script type="text/javascript">
+    var i = 0;
+//    for(i = 0; i < 10; i++){
+//      var id_name = "#branch" + i ;
+//      console.log(id_name);
+//      var can = d3
+//          .selectAll("g")
+//          .append("rect")
+//          .attr("width", 100)
+//          .attr("height", 100)
+//          .attr("class","dammyyy");
+//    }
+
+  </script>
 </body>
 </html>
