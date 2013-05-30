@@ -1,7 +1,6 @@
 import datetime
 import urllib
 import logging
-from google.appengine.ext import db
 import bp.base
 import bp.fetch
 

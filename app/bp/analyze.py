@@ -1,17 +1,11 @@
 # coding: UTF-8
 import xml.etree.ElementTree as ElementTree
-from bs4 import BeautifulSoup
-import html5lib
-from html5lib import treebuilders
-from html5lib import serializer
-import sys
-
+import BeautifulSoup
+import nltk
 import urllib
 import urllib2
 import logging
 import re
-from google.appengine.ext import db
-import bp
 
 
 class Analyze():
@@ -25,10 +19,6 @@ class Analyze():
         self.query_num = query_num
         self.extract(keyword)
         self.compare_urls()
-
-    @property
-    def key_hash(self):
-        return self.count_keyword(self.titles)
 
     @property
     def summary_hash(self):
@@ -80,7 +70,15 @@ class Analyze():
             else:
                 return "error"
 
-        soup = BeautifulSoup(html, "html5lib")
+
+        soup = BeautifulSoup.BeautifulSoup(html)
+#        el = etree.fromstring(html.read(), etree.HTMLParser())
+#
+#        logging.info("_______dom_______")
+#        for x in el.itertext():
+#            logging.info(x)
+
+
         html_pattern = re.compile(r'(http://[A-Za-z0-9\'~+\-=_.,/%\?!;:@#\*&\(\)]+)')
         try:
             for _a in soup.findAll('a'):
@@ -94,7 +92,6 @@ class Analyze():
         return urls
 
     def compare_urls(self):
-        self.query_num = int(self.query_num)
         self.matching_array =  [[False for j in range(self.query_num)] for i in range(self.query_num)]
         for i in range(self.query_num):
             for j in range(self.query_num):
@@ -102,13 +99,9 @@ class Analyze():
                     self.matching_array[i][j] = False
                 else:
                     self.matching_array[i][j] = self.matching_urls(self.links[i], self.links[j])
-        logging.info("_______Compare_result_______")
-        logging.error(self.matching_array)
 
 
     def matching_urls(self, urls1, urls2):
-        logging.info("_______links_______")
-        logging.error(urls1["childUrl"])
         for src in urls1["childUrl"]:
             for target in urls2["childUrl"]:
                 if src == target:
@@ -119,6 +112,8 @@ class Analyze():
     def count_keyword(self, target):
         hash = {}
         for p in target:
+            p = p.replace('.', ' ')
+            p = p.replace(',', ' ')
             keys = p.split(' ')
             for key in keys:
                 if key in hash:
@@ -126,11 +121,27 @@ class Analyze():
                 else:
                     hash[key] = 1
         hash = sorted(hash.items(), key=lambda x:x[1], reverse=True)
-        return hash
+        return self.extract_subject_keyword(hash)
+
+    def extract_subject_keyword(self, hash):
+        print "_______nltk_______"
+
+        hash_list = [h[0] for h in hash]
+        tagged = nltk.pos_tag(hash_list)
+        key_hash = []
+        for t in tagged:
+            if t[1] == "NN" or t[1] == "NNP":
+                key_hash.append(t[0])
+                print len(key_hash)
+                if len(key_hash) > 10:
+                    break
+        return key_hash
+
+
 
 
     @classmethod
     def create(cls, keyword, query_num):
-        analyze = Analyze(keyword, query_num)
+        analyze = Analyze(keyword, int(query_num))
         return analyze
 

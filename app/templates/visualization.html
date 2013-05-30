@@ -5,22 +5,23 @@
   <meta name="Keywords" content="" />
   <meta name="Description" content="ここ説明" />
   <meta charset="UTF-8">
-  <script type="text/javascript" src="/script/jquery-1.9.1.min.js"></script>
-  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-  <script src="/bootstrap/js/bootstrap.js"></script>
-  <!--<script src="/script/width.js"></script>-->
-  <link href="/css/parts.css" rel="stylesheet">
-  <link href="/css/all.css" rel="stylesheet">
+  <!--<script type="text/javascript" src="{{ url_for('static', filename='script/jquery-1.9.1.min.js')}}"></script>-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-responsive.min.css') }}" type="text/css" />
+
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/vis_parts.css') }}" type="text/css" />
+
   <script src="/script/lib/d3/d3.js"></script>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="/script/d3.layout.cloud.js"></script>
   <!--<script src="/script/treemap.js"></script>-->
   <!--<script src="/script/wordle.js"></script>-->
-
-
 </head>
 <body>
+
+
 <div class="container">
   <div class="row-fluid">
     <div class="span12">
@@ -28,11 +29,10 @@
         <div class="input-append " style="text-align:left;">
           <input class="span2" id="appendedInputButton" size="16" type="text" name="word" placeholder="Word">
           <button class="btn" type="submit">Search</button>
-          クエリの数
           <select class="span2" name="query_num">
-            <option>3</option>
-            <option>5</option>
-            <option>10</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
           </select>
         </div>
       </form>
@@ -49,12 +49,25 @@
       {% endfor %}
 
       <h3>Matching</h3>
-      {{matching}}
+      <table class="matching_table">
+       {% for row in matching %}
+        <tr>
+          {% for col in row %}
+          {% if col == True  %}
+            <td>◯</td>
+          {% else %}
+            <td>✕</td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+
 
       <h3>TOP Keyword</h3>
       {% if keyword != "" %}
-      {% for i in range(0,10) %}
-        {{i}} : {{keyword[i][0]}} <br>
+      {% for i in range(1,11) %}
+        {{i}} : {{keyword[i]}} <br>
       {% endfor %}
       {% endif %}
 
