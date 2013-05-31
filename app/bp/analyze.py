@@ -6,6 +6,7 @@ import urllib
 import urllib2
 import logging
 import re
+import lxml.html
 
 
 class Analyze():
@@ -14,17 +15,19 @@ class Analyze():
     titles = []
     summaries = []
     matching_array = []
+    data = []
 
     def __init__(self, keyword, query_num):
         self.query_num = query_num
-        self.extract(keyword)
+        self.access_api(keyword)
         self.compare_urls()
 
+
     @property
-    def summary_hash(self):
+    def summary_hash_top(self):
         return self.count_keyword(self.summaries)
 
-    def extract(self, keyword):
+    def access_api(self, keyword):
         appId = "83dpVeexg66u4NJrtfaO.vwNqPZTZw266pNUlLoi76oId_2S2ob.k7ygCoT0YJRdwg--"
         apiUrl = "http://search.yahooapis.jp/WebSearchServicePro/V1/webSearch?"
         yahooTag = "{urn:yahoo:jp:srch}"
@@ -35,30 +38,32 @@ class Analyze():
              'language':"en",
             })
 
-        logging.info("_______Access_______")
-        logging.info(apiUrl+params)
-
         response = urllib.urlopen(apiUrl+params).read()
         tree = ElementTree.fromstring(response)
 
         for url in tree.getiterator(yahooTag+"ClickUrl"):
             data = {}
             data["url"] = url.text
+#            soup = self.create_soup(str(url.text))
+            dom = self.create_dom(str(url.text))
 
-            urls = self.extract_links(str(url.text))
+#           url child
+            self.extract_plain_text(dom)
+            urls = self.extract_links_by_lxml(dom)
+#            urls = self.extract_links(soup)
             if urls == "error":
                 data["childUrl"] = []
             else:
                 data["childUrl"] = urls
             self.links.append(data)
+#
 
         for title in tree.getiterator(yahooTag+"Title"):
             self.titles.append(title.text)
         for summary in tree.getiterator(yahooTag+"Summary"):
             self.summaries.append(summary.text)
 
-    def extract_links(self, url):
-        urls = []
+    def create_soup(self, url):
         logging.info("_______Analyze_______")
         logging.error(url)
 
@@ -70,15 +75,36 @@ class Analyze():
             else:
                 return "error"
 
-
         soup = BeautifulSoup.BeautifulSoup(html)
-#        el = etree.fromstring(html.read(), etree.HTMLParser())
-#
-#        logging.info("_______dom_______")
-#        for x in el.itertext():
-#            logging.info(x)
+        return soup
 
+    def create_dom(self, url):
+        try:
+            html = urllib2.urlopen(url).read()
+        except urllib2.URLError, e:
+            return "error"
 
+        dom = lxml.html.fromstring(html)
+        logging.info("_______DOM_______")
+        return dom
+
+    def extract_links_by_lxml(self, dom):
+        urls = []
+        html_pattern = re.compile(r'(http://[A-Za-z0-9\'~+\-=_.,/%\?!;:@#\*&\(\)]+)')
+        try:
+            links= dom.xpath('//a')
+            for _a in links:
+                href = _a.attrib['href']
+                if href != None:
+                    url = html_pattern.match(str(href.encode('utf_8')))
+                    if url != None:
+                        urls.append(href)
+        except ValueError:
+            return "error"
+        return urls
+
+    def extract_links(self, soup):
+        urls = []
         html_pattern = re.compile(r'(http://[A-Za-z0-9\'~+\-=_.,/%\?!;:@#\*&\(\)]+)')
         try:
             for _a in soup.findAll('a'):
@@ -91,6 +117,13 @@ class Analyze():
             return "error"
         return urls
 
+    def extract_plain_text(self, dom):
+        try:
+            body = dom.body
+            print body.text_content()
+        except ValueError:
+            return "error"
+
     def compare_urls(self):
         self.matching_array =  [[False for j in range(self.query_num)] for i in range(self.query_num)]
         for i in range(self.query_num):
@@ -99,7 +132,6 @@ class Analyze():
                     self.matching_array[i][j] = False
                 else:
                     self.matching_array[i][j] = self.matching_urls(self.links[i], self.links[j])
-
 
     def matching_urls(self, urls1, urls2):
         for src in urls1["childUrl"]:
@@ -132,7 +164,6 @@ class Analyze():
         for t in tagged:
             if t[1] == "NN" or t[1] == "NNP":
                 key_hash.append(t[0])
-                print len(key_hash)
                 if len(key_hash) > 10:
                     break
         return key_hash

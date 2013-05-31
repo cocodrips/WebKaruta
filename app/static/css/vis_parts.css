@@ -4,3 +4,13 @@
     line-height: 12px;
     text-align: center;
 }
+
+.key_table{
+    width: 100%;
+    border: 1px solid #add8e6;
+}
+
+.key_table td{
+    width: 200px;
+    height: 200px;
+}

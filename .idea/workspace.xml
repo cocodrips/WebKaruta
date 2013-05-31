@@ -2,29 +2,702 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/parts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/d3.layout.cloud.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/examples/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/examples/layout_d3.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bp/__init__.py" afterPath="$PROJECT_DIR$/app/bp/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/all.css" afterPath="$PROJECT_DIR$/app/css/all.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/layout_d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/lib/d3/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/lib/d3/d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/onclicklistener.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/treemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/width.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/script/wordle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/matrixEn のコピー.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Flask.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/artwork/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/artwork/logo-full.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/debugger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/flask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/flaskr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/logo-full.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_static/yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_templates/sidebarintro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/_templates/sidebarlogo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/advanced_foreword.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/api.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/appcontext.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/becomingbig.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/blueprints.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/changelog.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/config.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/contents.rst.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/cgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/fastcgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/mod_wsgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/uwsgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/deploying/wsgi-standalone.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/design.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/errorhandling.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/extensiondev.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/extensions.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/flaskdocext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/flaskext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/flaskstyle.sty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/foreword.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/htmlfaq.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/installation.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/latexindex.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/license.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/logo.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/make.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/appdispatch.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/appfactories.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/caching.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/deferredcallbacks.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/distribute.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/errorpages.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/fabric.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/favicon.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/fileuploads.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/flashing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/jquery.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/lazyloading.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/mongokit.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/packages.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/sqlalchemy.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/sqlite3.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/streaming.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/templateinheritance.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/urlprocessors.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/viewdecorators.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/patterns/wtforms.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/quickstart.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/reqcontext.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/security.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/shell.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/signals.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/styleguide.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/templating.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/testing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/css.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/dbcon.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/dbinit.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/folders.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/introduction.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/schema.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/setup.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/templates.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/testing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/tutorial/views.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/unicode.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/upgrading.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/docs/views.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/blueprintexample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/blueprintexample_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/simple_page.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/templates/pages/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/templates/pages/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/templates/pages/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/blueprintexample/simple_page/templates/pages/world.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/flaskr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/flaskr_tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/templates/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/flaskr/templates/show_entries.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/jqueryexample/jqueryexample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/jqueryexample/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/jqueryexample/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/minitwit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/minitwit_tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/templates/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/templates/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/examples/minitwit/templates/timeline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/ctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/debughelpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/ext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/exthook.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/globals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/module.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/session.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/appctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/basic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/deprecations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/examples.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/subclassing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/_macro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/context_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/escaping_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/mail.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/nested/nested.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/simple_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templates/template_filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/admin/templates/admin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/blueprintapp/apps/frontend/templates/frontend/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/config_module_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/config_package_app/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flask_broken/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flask_broken/b.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flask_newext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flask_newext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flask_newext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flaskext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flaskext/oldext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flaskext/oldext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/flaskext/oldext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/importerror.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/lib/python2.5/site-packages/SiteEgg.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/lib/python2.5/site-packages/site_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/lib/python2.5/site-packages/site_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/main_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/admin/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/moduleapp/apps/frontend/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/path/installed_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/subdomaintestmodule/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/test_apps/subdomaintestmodule/static/hello.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/testsuite/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/flask/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/run-tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/setup.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Flask-0.9/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/CHANGES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Werkzeug.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Werkzeug.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Werkzeug.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Werkzeug.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/Werkzeug.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/artwork/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/artwork/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/codebackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/contents.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/debug-screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/navigation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/navigation_active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/shortly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/shorty-screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/werkzeug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_static/werkzeug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_templates/sidebarintro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_templates/sidebarlogo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/werkzeug/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/werkzeug/relations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/werkzeug/static/werkzeug.css_t" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/werkzeug/theme.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/_themes/werkzeug_theme_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/changes.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contents.rst.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/atom.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/cache.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/fixers.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/iterio.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/lint.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/profiler.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/securecookie.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/sessions.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/contrib/wrappers.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/datastructures.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/debug.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/deployment/cgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/deployment/fastcgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/deployment/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/deployment/mod_wsgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/deployment/proxying.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/exceptions.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/http.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/installation.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/latexindex.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/levels.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/local.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/logo.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/make.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/makearchive.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/middlewares.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/quickstart.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/request_data.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/routing.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/script.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/serving.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/templates.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/terms.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/test.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/transition.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/tutorial.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/unicode.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/utils.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/werkzeugext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/werkzeugstyle.sty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/wrappers.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/docs/wsgi.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/contrib/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cookieauth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/public/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/templates/static/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/templates/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/templates/static/not_found.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/views/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/coolmagic/views/static.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/templates/display.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/templates/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/templates/new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/templates/not_found.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/couchy/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/network.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/pages.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/content.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/shared/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/templates/missingpage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/templates/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/templates/server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/templates/serverlist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/cupoftee/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/httpbasicauth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/templates/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/templates/blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/i18nurls/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-coolmagic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-couchy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-cupoftee.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-i18nurls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-plnt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-shorty.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-simplewiki.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/manage-webpylike.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/partial/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/partial/complex_routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/database.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/sync.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/templates/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/plnt/webapp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/shortly.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/templates/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/templates/new_url.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shortly/templates/short_link_details.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/static/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/templates/display.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/templates/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/templates/new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/templates/not_found.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/shorty/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/actions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/application.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/database.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/specialpages.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/action_diff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/action_edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/action_log.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/action_revert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/action_show.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/macros.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/missing_action.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/page_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/page_missing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/templates/recent_changes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/simplewiki/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/upload.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/webpylike/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/examples/webpylike/webpylike.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/setup.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/_internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/atom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/fixers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/iterio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/jsrouting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/kickstart.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/limiter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/profiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/testtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/contrib/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/datastructures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/console.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/repr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/FONT_LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/console.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/debugger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/less.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/shared/ubuntu.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/debug/tbtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/formparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/local.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/posixemulation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/serving.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/templates.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testapp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/fixers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/iterio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/contrib/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/datastructures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/debug.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/formparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/local.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/collect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2pnglongtext/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2pnglongtext/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2pnglongtext/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/firefox3-2pnglongtext/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/ie6-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/ie6-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/ie6-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/ie6-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/ie7_full_path_request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/opera8-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/opera8-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/opera8-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/opera8-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/webkit3-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/webkit3-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/webkit3-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/multipart/webkit3-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/res/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/serving.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/testsuite/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/useragents.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/Werkzeug-0.8.3/werkzeug/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/NEWS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/TODO.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/builder/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/builder/_html5lib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/builder/_htmlparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/builder/_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/dammit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/element.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_builder_registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_docs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_html5lib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_htmlparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_soup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/bs4/tests/test_tree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/doc/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/doc/source/6.1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/doc/source/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/doc/source/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/scripts/demonstrate_parser_differences.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/scripts/demonstration_markup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/beautifulsoup4-4.1.1/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/AUTHORS.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/CHANGES.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/CONTRIBUTING.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/debug-info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/changes.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/html5lib.filters.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/html5lib.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/html5lib.serializer.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/html5lib.treebuilders.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/html5lib.treewalkers.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/license.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/make.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/modules.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/doc/movingparts.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/flake8-run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/alphabeticalattributes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/inject_meta_charset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/optionaltags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/filters/whitespace.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/html5parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/ihatexml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/inputstream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/serializer/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/serializer/htmlserializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/mockParser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/performance/concatenation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_encoding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_parser2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_serializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_tokenizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_treewalkers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/test_whitespace_filter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/tokenizertotree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/us-ascii.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tests/utf-8-bom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/tokenizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treebuilders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treebuilders/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treebuilders/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treebuilders/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treebuilders/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/genshistream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/lxmletree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/treewalkers/pulldom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/trie/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/trie/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/trie/datrie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/trie/py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/html5lib/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/parse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements-install.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements-optional-2.6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements-optional-cpython.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements-optional.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements-test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/tox.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/utils/entities.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/utils/iana_parse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/html5lib-python-master/utils/spider.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/NEWS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/easter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/relativedelta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/rrule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/tz.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/tzwin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/zoneinfo/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/dateutil/zoneinfo/zoneinfo--latest.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/python_dateutil.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/sandbox/rrulewrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/sandbox/scheduler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/setup.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/python-dateutil-2.1/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/documentation/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/documentation/conf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/documentation/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/third_party/six-1.1.0/six.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bp/analyze.py" afterPath="$PROJECT_DIR$/app/bp/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.yaml" afterPath="$PROJECT_DIR$/app/app.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bp/karuta.py" afterPath="$PROJECT_DIR$/app/bp/karuta.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bp/source.py" afterPath="$PROJECT_DIR$/app/bp/source.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/css/vis_parts.css" afterPath="$PROJECT_DIR$/app/static/css/vis_parts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/visualization.html" afterPath="$PROJECT_DIR$/app/templates/visualization.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/web.py" afterPath="$PROJECT_DIR$/app/web.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/app/.idea/workspace.xml" />
     </list>
     <ignored path="web_karuta.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369871222739" ignored="false" />
+    <file path="/Dummy.txt" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369962900312" ignored="false" />
     <file path="/a.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369773427764" ignored="false" />
-    <file path="/analyze.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369875748227" ignored="false" />
+    <file path="/analyze.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369962408762" ignored="false" />
     <file path="/start_script.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369772274055" ignored="false" />
-    <file path="/web.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369876287071" ignored="false" />
+    <file path="/web.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369960162536" ignored="false" />
     <file path="/__init__.py" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369867175285" ignored="false" />
-    <file path="/visualization.html" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369877269910" ignored="false" />
+    <file path="/visualization.html" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369879345292" ignored="false" />
+    <file path="/vis_parts.css" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369878512275" ignored="false" />
+    <file path="/dummy.xml" changelist="7ece2303-54f5-4dbf-b48e-6ddd8c2e6b60" time="1369879146588" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +757,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="analyze.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="analyze.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bp/analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="34" selection-start="337" selection-end="337" vertical-scroll-proportion="78.666664">
+            <state line="134" column="0" selection-start="4042" selection-end="4042" vertical-scroll-proportion="3.3376622">
               <folding>
                 <element signature="e#16#59#0" expanded="true" />
               </folding>
@@ -95,10 +768,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visualization.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fetch.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bp/fetch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualization.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/visualization.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="30" selection-start="316" selection-end="316" vertical-scroll-proportion="-0.2112676">
+            <state line="68" column="11" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vis_parts.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/css/vis_parts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="17" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,10 +798,8 @@
       <file leaf-file-name="web.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/web.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="13" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#25#42#0" expanded="true" />
-              </folding>
+            <state line="30" column="0" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,10 +833,11 @@
       <list>
         <option value="$PROJECT_DIR$/app/bp/__init__.py" />
         <option value="$PROJECT_DIR$/app/bp/karuta.py" />
-        <option value="$PROJECT_DIR$/app/bp/analyze.py" />
         <option value="$PROJECT_DIR$/app/css/all.css" />
-        <option value="$PROJECT_DIR$/app/web.py" />
+        <option value="$PROJECT_DIR$/app/static/css/vis_parts.css" />
         <option value="$PROJECT_DIR$/app/templates/visualization.html" />
+        <option value="$PROJECT_DIR$/app/web.py" />
+        <option value="$PROJECT_DIR$/app/bp/analyze.py" />
       </list>
     </option>
   </component>
@@ -160,10 +850,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="52" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="735" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -242,6 +931,21 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -355,8 +1059,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="52" width="1280" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="742" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -375,7 +1079,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.9984375" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13984375" sideWeight="0.9984375" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -455,9 +1159,7 @@
     <entry file="file://$PROJECT_DIR$/app/web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#25#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -480,9 +1182,7 @@
     <entry file="file://$PROJECT_DIR$/app/web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#25#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -505,9 +1205,7 @@
     <entry file="file://$PROJECT_DIR$/app/web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#25#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -520,18 +1218,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bp/karuta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bp/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/logging/__init__.py">
@@ -541,28 +1230,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bp/analyze.py">
+    <entry file="file://$PROJECT_DIR$/app/bp/karuta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="337" selection-end="337" vertical-scroll-proportion="78.666664">
-          <folding>
-            <element signature="e#16#59#0" expanded="true" />
-          </folding>
+        <state line="9" column="23" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/vis_parts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#25#42#0" expanded="true" />
-          </folding>
+        <state line="30" column="0" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/visualization.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="316" selection-end="316" vertical-scroll-proportion="-0.2112676">
+        <state line="68" column="11" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bp/fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bp/analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="0" selection-start="4042" selection-end="4042" vertical-scroll-proportion="3.3376622">
+          <folding>
+            <element signature="e#16#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

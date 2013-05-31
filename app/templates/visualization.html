@@ -5,7 +5,7 @@
   <meta name="Keywords" content="" />
   <meta name="Description" content="ここ説明" />
   <meta charset="UTF-8">
-  <!--<script type="text/javascript" src="{{ url_for('static', filename='script/jquery-1.9.1.min.js')}}"></script>-->
+  <script type="text/javascript" src="{{ url_for('static', filename='script/jquery-1.9.1.min.js')}}"></script>
   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" type="text/css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-responsive.min.css') }}" type="text/css" />
 
@@ -13,11 +13,9 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}" type="text/css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/vis_parts.css') }}" type="text/css" />
 
-  <script src="/script/lib/d3/d3.js"></script>
+  <script src="{{ url_for('static', filename='script/lib/d3/d3.js')}}"></script>
   <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="/script/d3.layout.cloud.js"></script>
-  <!--<script src="/script/treemap.js"></script>-->
-  <!--<script src="/script/wordle.js"></script>-->
+
 </head>
 <body>
 
@@ -66,10 +64,23 @@
 
       <h3>TOP Keyword</h3>
       {% if keyword != "" %}
-      {% for i in range(1,11) %}
-        {{i}} : {{keyword[i]}} <br>
-      {% endfor %}
+
+      <table class="key_table">
+        {% for i in range(1,11) %}
+        {% if i % 3 == 1%}
+        <tr>
+        {% endif %}
+        <td>{{i}} : {{keyword[i]}}<br>
+          <div id="key_table{{i}}"></div>
+        </td>
+        {% if i % 3 == 0%}
+        </tr>
+        {% endif %}
+
+        {% endfor %}
+      </table>
       {% endif %}
+
 
       <h3>Links</h3>
       {% for data in links %}
@@ -83,6 +94,13 @@
       {% endfor %}
     </div>
   </div>
+  <div id="static_keyword" data-keyword="{{keyword}}"></div>
 
+  <script type="text/javascript">
+    $(function(){
+      console.log($("static_keyword").attr('data-keyword'));
+    });
+
+  </script>
 </body>
 </html>
